@@ -10,7 +10,7 @@ const Hero = () => {
     // Parallax scroll effect for the stars
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const starsElement = document.querySelector('.bg-stars');
+      const starsElement = document.querySelector('.bg-stars') as HTMLElement;
       if (starsElement) {
         starsElement.style.transform = `translateY(${scrollY * 0.1}px)`;
       }
