@@ -1,10 +1,9 @@
-
 export type Translations = {
   services: string;
   testimonials: string;
   contact: string;
   getStarted: string;
-  talkWithUs: string;
+  getExpertHelp: string;
   exploreServices: string;
   contactUs: string;
   ourServices: string;
@@ -67,7 +66,7 @@ export const translations: Record<string, Translations> = {
     testimonials: 'Testimonials',
     contact: 'Contact',
     getStarted: 'Get Started',
-    talkWithUs: 'Talk with Us!',
+    getExpertHelp: 'Get Expert Help',
     exploreServices: 'Explore Services',
     contactUs: 'Contact Us',
     ourServices: 'Our Services',
@@ -128,7 +127,7 @@ export const translations: Record<string, Translations> = {
     testimonials: 'Testimonios',
     contact: 'Contacto',
     getStarted: 'Comenzar',
-    talkWithUs: '¡Habla con Nosotros!',
+    getExpertHelp: 'Obtener Ayuda Experta',
     exploreServices: 'Explorar Servicios',
     contactUs: 'Contáctanos',
     ourServices: 'Nuestros Servicios',
@@ -189,7 +188,7 @@ export const translations: Record<string, Translations> = {
     testimonials: 'Depoimentos',
     contact: 'Contato',
     getStarted: 'Começar',
-    talkWithUs: 'Fale Conosco!',
+    getExpertHelp: 'Obter Ajuda Especializada',
     exploreServices: 'Explorar Serviços',
     contactUs: 'Fale Conosco',
     ourServices: 'Nossos Serviços',

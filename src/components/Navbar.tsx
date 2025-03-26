@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
 import { Globe } from 'lucide-react';
@@ -38,7 +39,7 @@ const Navbar = () => {
             {t.testimonials}
           </a>
           <a href="#contact" className="text-ovnilab-text transition-colors btn-primary">
-            {t.talkWithUs}
+            {t.getExpertHelp}
           </a>
           <div className="flex items-center space-x-2 border-l pl-2 border-ovnilab-teal/30">
             <button onClick={() => setLanguage('en')} className={cn("px-2 py-1 rounded-md transition-colors", language === 'en' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70 hover:text-ovnilab-teal")}>
@@ -81,7 +82,7 @@ const Navbar = () => {
             {t.testimonials}
           </a>
           <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2 btn-primary inline-block text-center" onClick={() => setMenuOpen(false)}>
-            {t.talkWithUs}
+            {t.getExpertHelp}
           </a>
           <div className="flex space-x-2 pt-2 border-t border-ovnilab-teal/30">
             <button onClick={() => setLanguage('en')} className={cn("px-2 py-1 rounded-md transition-colors", language === 'en' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70")}>

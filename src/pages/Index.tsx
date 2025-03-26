@@ -114,7 +114,7 @@ const Index = () => {
           <div className="mt-16 text-center reveal">
             <a href="#contact" className="btn-primary inline-flex items-center">
               <CloudCog className="w-5 h-5 mr-2" />
-              {t.talkWithUs}
+              {t.getExpertHelp}
             </a>
           </div>
         </div>
