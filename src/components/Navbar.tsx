@@ -1,10 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
+import { Globe } from 'lucide-react';
+import { useLanguage } from '@/hooks/useLanguage';
+import { translations } from '@/locales';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,6 +24,8 @@ const Navbar = () => {
     };
   }, [scrolled]);
 
+  const t = translations[language];
+
   return (
     <nav
       className={cn(
@@ -28,47 +34,88 @@ const Navbar = () => {
       )}
     >
       <div className="flex items-center justify-between">
-        <a href="#" className="text-ovnilab-text font-space font-bold text-xl flex items-center">
+        <a href="#" className="text-ovnilab-text font-space font-bold text-2xl md:text-3xl flex items-center">
           <span className="text-gradient">OVNI</span>LAB
         </a>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
           <a href="#services" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
-            Services
+            {t.services}
           </a>
           <a href="#testimonials" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
-            Testimonials
+            {t.testimonials}
           </a>
           <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
-            Contact
+            {t.contact}
           </a>
           <a href="#contact" className="btn-primary">
-            Get Started
+            {t.getStarted}
           </a>
+          <div className="flex items-center space-x-2 border-l pl-2 border-ovnilab-teal/30">
+            <button 
+              onClick={() => setLanguage('en')} 
+              className={cn(
+                "px-2 py-1 rounded-md transition-colors",
+                language === 'en' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70 hover:text-ovnilab-teal"
+              )}
+            >
+              EN
+            </button>
+            <button 
+              onClick={() => setLanguage('es')} 
+              className={cn(
+                "px-2 py-1 rounded-md transition-colors",
+                language === 'es' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70 hover:text-ovnilab-teal"
+              )}
+            >
+              ES
+            </button>
+            <button 
+              onClick={() => setLanguage('fr')} 
+              className={cn(
+                "px-2 py-1 rounded-md transition-colors",
+                language === 'fr' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70 hover:text-ovnilab-teal"
+              )}
+            >
+              FR
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation Toggle */}
-        <button 
-          className="md:hidden text-ovnilab-text"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle Menu"
-        >
-          <div className="w-6 flex flex-col space-y-1">
-            <span className={cn(
-              "block h-0.5 bg-ovnilab-teal transition-all duration-300", 
-              menuOpen ? "transform rotate-45 translate-y-1.5" : ""
-            )}></span>
-            <span className={cn(
-              "block h-0.5 bg-ovnilab-teal transition-all duration-300", 
-              menuOpen ? "opacity-0" : ""
-            )}></span>
-            <span className={cn(
-              "block h-0.5 bg-ovnilab-teal transition-all duration-300", 
-              menuOpen ? "transform -rotate-45 -translate-y-1.5" : ""
-            )}></span>
-          </div>
-        </button>
+        <div className="md:hidden flex items-center space-x-2">
+          <button 
+            className="p-2 text-ovnilab-teal"
+            onClick={() => {
+              const nextLang = language === 'en' ? 'es' : language === 'es' ? 'fr' : 'en';
+              setLanguage(nextLang);
+            }}
+            aria-label="Change Language"
+          >
+            <Globe size={20} />
+          </button>
+          <button 
+            className="text-ovnilab-text"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Toggle Menu"
+          >
+            <div className="w-6 flex flex-col space-y-1">
+              <span className={cn(
+                "block h-0.5 bg-ovnilab-teal transition-all duration-300", 
+                menuOpen ? "transform rotate-45 translate-y-1.5" : ""
+              )}></span>
+              <span className={cn(
+                "block h-0.5 bg-ovnilab-teal transition-all duration-300", 
+                menuOpen ? "opacity-0" : ""
+              )}></span>
+              <span className={cn(
+                "block h-0.5 bg-ovnilab-teal transition-all duration-300", 
+                menuOpen ? "transform -rotate-45 -translate-y-1.5" : ""
+              )}></span>
+            </div>
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
@@ -81,26 +128,55 @@ const Navbar = () => {
             className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2"
             onClick={() => setMenuOpen(false)}
           >
-            Services
+            {t.services}
           </a>
           <a href="#testimonials" 
             className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2"
             onClick={() => setMenuOpen(false)}
           >
-            Testimonials
+            {t.testimonials}
           </a>
           <a href="#contact" 
             className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2"
             onClick={() => setMenuOpen(false)}
           >
-            Contact
+            {t.contact}
           </a>
           <a href="#contact" 
             className="btn-primary inline-block text-center"
             onClick={() => setMenuOpen(false)}
           >
-            Get Started
+            {t.getStarted}
           </a>
+          <div className="flex space-x-2 pt-2 border-t border-ovnilab-teal/30">
+            <button 
+              onClick={() => setLanguage('en')} 
+              className={cn(
+                "px-2 py-1 rounded-md transition-colors",
+                language === 'en' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70"
+              )}
+            >
+              EN
+            </button>
+            <button 
+              onClick={() => setLanguage('es')} 
+              className={cn(
+                "px-2 py-1 rounded-md transition-colors",
+                language === 'es' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70"
+              )}
+            >
+              ES
+            </button>
+            <button 
+              onClick={() => setLanguage('fr')} 
+              className={cn(
+                "px-2 py-1 rounded-md transition-colors",
+                language === 'fr' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70"
+              )}
+            >
+              FR
+            </button>
+          </div>
         </div>
       </div>
     </nav>

@@ -1,10 +1,14 @@
 
 import React, { useState, useEffect } from 'react';
 import AnimatedText from './AnimatedText';
+import { useLanguage } from '@/hooks/useLanguage';
+import { translations } from '@/locales';
 
 const Hero = () => {
   const [showSubtitle, setShowSubtitle] = useState(false);
   const [showButtons, setShowButtons] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   useEffect(() => {
     // Parallax scroll effect for the stars
@@ -20,6 +24,28 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const getAnimatedText = () => {
+    if (language === 'en') return "Transforming Business with";
+    if (language === 'es') return "Transformando Negocios con";
+    return "Transformer les Entreprises avec";
+  };
+
+  const getSubtitleText = () => {
+    if (language === 'en') return "AI Agents & Smart Automation";
+    if (language === 'es') return "Agentes de IA y Automatización Inteligente";
+    return "Agents IA & Automatisation Intelligente";
+  };
+
+  const getDescriptionText = () => {
+    if (language === 'en') {
+      return "We help companies leverage artificial intelligence and automation to streamline processes, reduce costs and deliver exceptional customer experiences.";
+    }
+    if (language === 'es') {
+      return "Ayudamos a las empresas a aprovechar la inteligencia artificial y la automatización para optimizar procesos, reducir costos y brindar experiencias excepcionales al cliente.";
+    }
+    return "Nous aidons les entreprises à tirer parti de l'intelligence artificielle et de l'automatisation pour rationaliser les processus, réduire les coûts et offrir des expériences client exceptionnelles.";
+  };
+
   return (
     <section className="min-h-screen flex flex-col items-center justify-center pt-20 pb-16 px-6 md:px-12 lg:px-24 relative overflow-hidden">
       {/* Background Elements */}
@@ -33,38 +59,37 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/79d1b9c8-2872-43db-90c1-9dbcd7ca67b9.png" 
             alt="OVNILAB Logo" 
-            className="mx-auto w-44 md:w-56 lg:w-64 h-auto animate-scale-in"
+            className="mx-auto w-44 md:w-56 lg:w-64 h-auto rounded-full border-4 border-ovnilab-teal/50 animate-scale-in"
           />
         </div>
         
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-space mb-6 leading-tight">
           <AnimatedText 
-            text="Transforming Business with" 
+            text={getAnimatedText()} 
             className="block"
             onComplete={() => setShowSubtitle(true)} 
             initialDelay={500}
           />
           {showSubtitle && (
             <span className="block text-gradient text-shadow animate-fade-in">
-              AI Agents & Smart Automation
+              {getSubtitleText()}
             </span>
           )}
         </h1>
         
         {showSubtitle && (
           <p className="text-xl md:text-2xl text-ovnilab-text/80 max-w-3xl mx-auto mb-10 animate-fade-in animate-delay-300">
-            We help companies leverage artificial intelligence and automation to streamline processes, 
-            reduce costs and deliver exceptional customer experiences.
+            {getDescriptionText()}
           </p>
         )}
         
         {showSubtitle && (
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in animate-delay-500">
             <a href="#services" className="btn-primary w-full sm:w-auto">
-              Explore Services
+              {t.exploreServices}
             </a>
             <a href="#contact" className="btn-outline w-full sm:w-auto">
-              Contact Us
+              {t.contactUs}
             </a>
           </div>
         )}

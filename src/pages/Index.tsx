@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -7,8 +6,13 @@ import TestimonialCard from '@/components/TestimonialCard';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import { Code, MessageSquare, Star, BarChart4, Bot, Zap, Settings, CloudCog } from 'lucide-react';
+import { useLanguage } from '@/hooks/useLanguage';
+import { translations } from '@/locales';
 
 const Index = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   useEffect(() => {
     // Reveal animations on scroll
     const handleScroll = () => {
@@ -42,13 +46,17 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="text-center mb-16 reveal">
             <p className="inline-block px-3 py-1 bg-ovnilab-purple/20 rounded-full text-ovnilab-teal text-sm font-medium mb-4">
-              Our Services
+              {t.ourServices}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-              How OVNILAB Can <span className="text-gradient">Transform</span> Your Business
+              {t.transformBusiness.split('Transform').map((part, i) => 
+                i === 0 ? 
+                  <>{part}<span className="text-gradient">Transform</span></> : 
+                  part
+              )}
             </h2>
             <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
-              We deliver cutting-edge AI and automation solutions tailored to your specific needs
+              {t.cuttingEdgeAI}
             </p>
           </div>
           
@@ -105,7 +113,7 @@ const Index = () => {
           <div className="mt-16 text-center reveal">
             <a href="#contact" className="btn-primary inline-flex items-center">
               <CloudCog className="w-5 h-5 mr-2" />
-              Get Started with AI
+              {t.getStarted}
             </a>
           </div>
         </div>
@@ -120,13 +128,17 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="text-center mb-16 reveal">
             <p className="inline-block px-3 py-1 bg-ovnilab-purple/20 rounded-full text-ovnilab-teal text-sm font-medium mb-4">
-              Testimonials
+              {t.testimonials}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-              What Our <span className="text-gradient">Clients</span> Say
+              {t.whatOurClientsSay.split('Clients').map((part, i) => 
+                i === 0 ? 
+                  <>{part}<span className="text-gradient">Clients</span></> : 
+                  part
+              )}
             </h2>
             <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
-              Hear from businesses that have transformed their operations with our AI solutions
+              {t.hearFromBusinesses}
             </p>
           </div>
           
@@ -167,13 +179,17 @@ const Index = () => {
         <div className="relative z-10 max-w-7xl mx-auto">
           <div className="text-center mb-16 reveal">
             <p className="inline-block px-3 py-1 bg-ovnilab-purple/20 rounded-full text-ovnilab-teal text-sm font-medium mb-4">
-              Contact Us
+              {t.contact}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-              Ready to <span className="text-gradient">Transform</span> Your Business?
+              {t.readyToTransform.split('Transform').map((part, i) => 
+                i === 0 ? 
+                  <>{part}<span className="text-gradient">Transform</span></> : 
+                  part
+              )}
             </h2>
             <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
-              Fill out the form below and we'll get back to you within 24 hours
+              {t.fillOutForm}
             </p>
           </div>
           
