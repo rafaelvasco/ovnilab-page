@@ -46,11 +46,8 @@ const Navbar = () => {
           <a href="#testimonials" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
             {t.testimonials}
           </a>
-          <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
-            {t.contact}
-          </a>
-          <a href="#contact" className="btn-primary">
-            {t.getStarted}
+          <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors btn-primary">
+            {t.talkWithUs}
           </a>
           <div className="flex items-center space-x-2 border-l pl-2 border-ovnilab-teal/30">
             <button 
@@ -137,16 +134,10 @@ const Navbar = () => {
             {t.testimonials}
           </a>
           <a href="#contact" 
-            className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2"
+            className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2 btn-primary inline-block text-center"
             onClick={() => setMenuOpen(false)}
           >
-            {t.contact}
-          </a>
-          <a href="#contact" 
-            className="btn-primary inline-block text-center"
-            onClick={() => setMenuOpen(false)}
-          >
-            {t.getStarted}
+            {t.talkWithUs}
           </a>
           <div className="flex space-x-2 pt-2 border-t border-ovnilab-teal/30">
             <button 
