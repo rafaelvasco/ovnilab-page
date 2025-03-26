@@ -33,7 +33,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
       // Start the typing animation
       const interval = setInterval(() => {
         if (currentIndex < text.length) {
-          setDisplayedText(prev => prev + text[currentIndex]);
+          setDisplayedText(text.substring(0, currentIndex + 1));
           currentIndex++;
         } else {
           clearInterval(interval);
