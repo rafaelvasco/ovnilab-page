@@ -18,13 +18,15 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   onComplete
 }) => {
   const [displayedText, setDisplayedText] = useState('');
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [cursorVisible, setCursorVisible] = useState(true);
+  const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
     // Reset animation when text changes
     setDisplayedText('');
-    setCurrentIndex(0);
+    setIsComplete(false);
+    
+    let currentIndex = 0;
     
     // Initial delay before starting animation
     const initialTimer = setTimeout(() => {
@@ -32,9 +34,10 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
       const interval = setInterval(() => {
         if (currentIndex < text.length) {
           setDisplayedText(prev => prev + text[currentIndex]);
-          setCurrentIndex(prevIndex => prevIndex + 1);
+          currentIndex++;
         } else {
           clearInterval(interval);
+          setIsComplete(true);
           if (onComplete) onComplete();
         }
       }, delay);
@@ -43,7 +46,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
     }, initialDelay);
     
     return () => clearTimeout(initialTimer);
-  }, [text, delay, initialDelay, currentIndex, onComplete]);
+  }, [text, delay, initialDelay, onComplete]);
 
   // Blinking cursor effect
   useEffect(() => {
@@ -57,7 +60,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = ({
   return (
     <span className={cn(className)}>
       {displayedText}
-      <span className={`${cursorVisible ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}>|</span>
+      <span className={`${cursorVisible && !isComplete ? 'opacity-100' : 'opacity-0'} transition-opacity duration-100`}>|</span>
     </span>
   );
 };

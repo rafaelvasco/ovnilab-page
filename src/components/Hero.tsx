@@ -42,6 +42,7 @@ const Hero = () => {
             text="Transforming Business with" 
             className="block"
             onComplete={() => setShowSubtitle(true)} 
+            initialDelay={500}
           />
           {showSubtitle && (
             <span className="block text-gradient text-shadow animate-fade-in">
