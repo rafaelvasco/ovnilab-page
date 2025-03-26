@@ -1,9 +1,13 @@
 
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/locales";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { language } = useLanguage();
+  const t = translations[language];
   
   return (
     <footer className="pt-16 pb-8 px-6 md:px-12 lg:px-24 bg-ovnilab-darkPurple relative overflow-hidden">
@@ -20,7 +24,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-ovnilab-text/70 mb-6">
-              Transforming businesses with AI agents and smart automation solutions that drive efficiency and growth.
+              {t.footerDesc}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-ovnilab-purple/20 flex items-center justify-center hover:bg-ovnilab-purple/40 transition-colors">
@@ -47,49 +51,49 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-6 font-space">Services</h3>
+            <h3 className="text-lg font-bold mb-6 font-space">{t.footerServices}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">AI Agents</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.aiAgents}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Business Process Automation</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.businessProcessAutomation}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Marketing Automation</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.marketingAutomation}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Custom AI Solutions</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.customAISolutions}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">AI Integration</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.aiIntegration}</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-6 font-space">Company</h3>
+            <h3 className="text-lg font-bold mb-6 font-space">{t.footerCompany}</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">About Us</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.aboutUs}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Case Studies</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.caseStudies}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Testimonials</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.testimonials}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Blog</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.blog}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">Careers</a>
+                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.careers}</a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-lg font-bold mb-6 font-space">Contact</h3>
+            <h3 className="text-lg font-bold mb-6 font-space">{t.footerContact}</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="w-5 h-5 text-ovnilab-teal mr-3 mt-0.5" />
@@ -115,7 +119,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-8 border-t border-white/10 text-center text-ovnilab-text/60 text-sm">
-          <p>&copy; {currentYear} OVNILAB. All rights reserved.</p>
+          <p>&copy; {currentYear} OVNILAB. {t.allRightsReserved}</p>
         </div>
       </div>
     </footer>

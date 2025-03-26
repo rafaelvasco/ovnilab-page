@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -62,48 +63,48 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
-              title="AI Customer Support Agents"
-              description="24/7 intelligent support agents that understand context, solve problems, and deliver exceptional customer experiences."
+              title={t.aiCustomerSupportTitle}
+              description={t.aiCustomerSupportDesc}
               icon={<MessageSquare size={24} />}
               color="teal"
               delay={100}
             />
             
             <ServiceCard
-              title="AI Sales Assistants"
-              description="Conversational AI agents that qualify leads, answer product questions, and move prospects through your sales funnel."
+              title={t.aiSalesAssistantsTitle}
+              description={t.aiSalesAssistantsDesc}
               icon={<Star size={24} />}
               color="green"
               delay={200}
             />
             
             <ServiceCard
-              title="Scheduling & Booking Agents"
-              description="Intelligent agents that handle appointment setting, follow-ups, and calendar management without human intervention."
+              title={t.schedulingAgentsTitle}
+              description={t.schedulingAgentsDesc}
               icon={<Code size={24} />}
               color="purple"
               delay={300}
             />
             
             <ServiceCard
-              title="Business Process Automation"
-              description="Streamline workflows, eliminate repetitive tasks, and reduce operational costs with intelligent automation solutions."
+              title={t.businessProcessTitle}
+              description={t.businessProcessDesc}
               icon={<Zap size={24} />}
               color="orange"
               delay={400}
             />
             
             <ServiceCard
-              title="Marketing Automation"
-              description="AI-powered content creation, campaign management, and customer journey optimization for improved conversion rates."
+              title={t.marketingAutomationTitle}
+              description={t.marketingAutomationDesc}
               icon={<BarChart4 size={24} />}
               color="teal"
               delay={500}
             />
             
             <ServiceCard
-              title="Custom AI Solutions"
-              description="Tailored artificial intelligence applications designed specifically for your unique business challenges and opportunities."
+              title={t.customAISolutionsTitle}
+              description={t.customAISolutionsDesc}
               icon={<Settings size={24} />}
               color="green"
               delay={600}
@@ -147,7 +148,7 @@ const Index = () => {
               name="Sarah Johnson"
               position="CEO"
               company="TechFlow Inc."
-              testimonial="OVNILAB's AI customer support agents have revolutionized our support operations. We've reduced response times by 80% while improving customer satisfaction scores."
+              testimonial={t.testimonialsQuote1}
               image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
               delay={100}
             />
@@ -156,7 +157,7 @@ const Index = () => {
               name="Michael Chen"
               position="Marketing Director"
               company="GrowthX"
-              testimonial="The marketing automation platform they built for us has transformed our lead nurturing process. Our conversion rates have increased by 45% in just three months."
+              testimonial={t.testimonialsQuote2}
               image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
               delay={200}
             />
@@ -165,7 +166,7 @@ const Index = () => {
               name="Emily Rodriguez"
               position="Operations Manager"
               company="Streamline Solutions"
-              testimonial="Implementing OVNILAB's business process automation has cut our operational costs by 30% and freed up our team to focus on strategic initiatives instead of repetitive tasks."
+              testimonial={t.testimonialsQuote3}
               image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80"
               delay={300}
             />
