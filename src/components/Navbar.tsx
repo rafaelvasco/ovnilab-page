@@ -72,13 +72,13 @@ const Navbar = () => {
               ES
             </button>
             <button 
-              onClick={() => setLanguage('fr')} 
+              onClick={() => setLanguage('pt-br')} 
               className={cn(
                 "px-2 py-1 rounded-md transition-colors",
-                language === 'fr' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70 hover:text-ovnilab-teal"
+                language === 'pt-br' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70 hover:text-ovnilab-teal"
               )}
             >
-              FR
+              PT-BR
             </button>
           </div>
         </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
           <button 
             className="p-2 text-ovnilab-teal"
             onClick={() => {
-              const nextLang = language === 'en' ? 'es' : language === 'es' ? 'fr' : 'en';
+              const nextLang = language === 'en' ? 'es' : language === 'es' ? 'pt-br' : 'en';
               setLanguage(nextLang);
             }}
             aria-label="Change Language"
@@ -168,13 +168,13 @@ const Navbar = () => {
               ES
             </button>
             <button 
-              onClick={() => setLanguage('fr')} 
+              onClick={() => setLanguage('pt-br')} 
               className={cn(
                 "px-2 py-1 rounded-md transition-colors",
-                language === 'fr' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70"
+                language === 'pt-br' ? "bg-ovnilab-teal/20 text-ovnilab-teal" : "text-ovnilab-text/70"
               )}
             >
-              FR
+              PT-BR
             </button>
           </div>
         </div>

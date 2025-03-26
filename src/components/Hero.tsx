@@ -27,13 +27,13 @@ const Hero = () => {
   const getAnimatedText = () => {
     if (language === 'en') return "Transforming Business with";
     if (language === 'es') return "Transformando Negocios con";
-    return "Transformer les Entreprises avec";
+    return "Transformando Negócios com";
   };
 
   const getSubtitleText = () => {
     if (language === 'en') return "AI Agents & Smart Automation";
     if (language === 'es') return "Agentes de IA y Automatización Inteligente";
-    return "Agents IA & Automatisation Intelligente";
+    return "Agentes de IA e Automação Inteligente";
   };
 
   const getDescriptionText = () => {
@@ -43,7 +43,7 @@ const Hero = () => {
     if (language === 'es') {
       return "Ayudamos a las empresas a aprovechar la inteligencia artificial y la automatización para optimizar procesos, reducir costos y brindar experiencias excepcionales al cliente.";
     }
-    return "Nous aidons les entreprises à tirer parti de l'intelligence artificielle et de l'automatisation pour rationaliser les processus, réduire les coûts et offrir des expériences client exceptionnelles.";
+    return "Ajudamos empresas a utilizar inteligência artificial e automação para otimizar processos, reduzir custos e proporcionar experiências excepcionais aos clientes.";
   };
 
   return (

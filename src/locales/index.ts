@@ -46,19 +46,19 @@ export const translations: Record<string, Translations> = {
     readyToTransform: '¿Listo para Transformar Tu Negocio?',
     fillOutForm: 'Completa el formulario a continuación y nos pondremos en contacto contigo dentro de las 24 horas'
   },
-  fr: {
-    services: 'Services',
-    testimonials: 'Témoignages',
-    contact: 'Contact',
-    getStarted: 'Commencer',
-    exploreServices: 'Explorer les Services',
-    contactUs: 'Contactez-nous',
-    ourServices: 'Nos Services',
-    transformBusiness: 'Comment OVNILAB Peut Transformer Votre Entreprise',
-    cuttingEdgeAI: 'Nous proposons des solutions d\'IA et d\'automatisation de pointe adaptées à vos besoins spécifiques',
-    whatOurClientsSay: 'Ce Que Disent Nos Clients',
-    hearFromBusinesses: 'Écoutez les entreprises qui ont transformé leurs opérations avec nos solutions d\'IA',
-    readyToTransform: 'Prêt à Transformer Votre Entreprise?',
-    fillOutForm: 'Remplissez le formulaire ci-dessous et nous vous répondrons dans les 24 heures'
+  'pt-br': {
+    services: 'Serviços',
+    testimonials: 'Depoimentos',
+    contact: 'Contato',
+    getStarted: 'Começar',
+    exploreServices: 'Explorar Serviços',
+    contactUs: 'Fale Conosco',
+    ourServices: 'Nossos Serviços',
+    transformBusiness: 'Como a OVNILAB Pode Transformar Seu Negócio',
+    cuttingEdgeAI: 'Oferecemos soluções de IA e automação de ponta adaptadas às suas necessidades específicas',
+    whatOurClientsSay: 'O Que Nossos Clientes Dizem',
+    hearFromBusinesses: 'Ouça empresas que transformaram suas operações com nossas soluções de IA',
+    readyToTransform: 'Pronto para Transformar Seu Negócio?',
+    fillOutForm: 'Preencha o formulário abaixo e entraremos em contato com você em 24 horas'
   }
 };
