@@ -1,7 +1,6 @@
 
 export type Translations = {
   services: string;
-  testimonials: string;
   contact: string;
   getStarted: string;
   getExpertHelp: string;
@@ -10,8 +9,6 @@ export type Translations = {
   ourServices: string;
   transformBusiness: string;
   cuttingEdgeAI: string;
-  whatOurClientsSay: string;
-  hearFromBusinesses: string;
   readyToTransform: string;
   fillOutForm: string;
   // Service cards
@@ -27,10 +24,6 @@ export type Translations = {
   marketingAutomationDesc: string;
   customAISolutionsTitle: string;
   customAISolutionsDesc: string;
-  // Testimonials
-  testimonialsQuote1: string;
-  testimonialsQuote2: string;
-  testimonialsQuote3: string;
   // Contact form
   getInTouch: string;
   name: string;
@@ -76,4 +69,3 @@ export type Translations = {
   andMoreTitle: string;
   andMoreDesc: string;
 };
-

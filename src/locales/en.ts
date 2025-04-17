@@ -1,9 +1,7 @@
-
 import { Translations } from './types';
 
 export const en: Translations = {
   services: 'Services',
-  testimonials: 'Testimonials',
   contact: 'Contact',
   getStarted: 'Get Started',
   getExpertHelp: 'Get Expert Help',
@@ -12,8 +10,6 @@ export const en: Translations = {
   ourServices: 'Our Services',
   transformBusiness: 'How OVNILAB Can Transform Your Business',
   cuttingEdgeAI: 'We deliver cutting-edge AI and automation solutions tailored to your specific needs',
-  whatOurClientsSay: 'What Our Clients Say',
-  hearFromBusinesses: 'Hear from businesses that have transformed their operations with our AI solutions',
   readyToTransform: 'Ready to Transform Your Business?',
   fillOutForm: 'Fill out the form below and we\'ll get back to you within 24 hours',
   // Service cards
@@ -78,4 +74,3 @@ export const en: Translations = {
   andMoreTitle: 'And More',
   andMoreDesc: 'Discover custom AI solutions tailored to your industry needs.',
 };
-

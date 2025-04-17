@@ -1,9 +1,7 @@
-
 import { Translations } from './types';
 
 export const ptBr: Translations = {
   services: 'Serviços',
-  testimonials: 'Depoimentos',
   contact: 'Contato',
   getStarted: 'Começar',
   getExpertHelp: 'Obter Ajuda Especializada',
@@ -12,8 +10,6 @@ export const ptBr: Translations = {
   ourServices: 'Nossos Serviços',
   transformBusiness: 'Como a OVNILAB Pode Transformar Seu Negócio',
   cuttingEdgeAI: 'Oferecemos soluções de IA e automação de ponta adaptadas às suas necessidades específicas',
-  whatOurClientsSay: 'O Que Nossos Clientes Dizem',
-  hearFromBusinesses: 'Ouça empresas que transformaram suas operações com nossas soluções de IA',
   readyToTransform: 'Pronto para Transformar Seu Negócio?',
   fillOutForm: 'Preencha o formulário abaixo e entraremos em contato com você em 24 horas',
   // Service cards
@@ -78,4 +74,3 @@ export const ptBr: Translations = {
   andMoreTitle: 'E Mais',
   andMoreDesc: 'Descubra soluções de IA personalizadas adaptadas às necessidades da sua indústria.',
 };
-

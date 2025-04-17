@@ -1,14 +1,15 @@
+
 import React, { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import ServiceCard from '@/components/ServiceCard';
-import TestimonialCard from '@/components/TestimonialCard';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
 import AIApplications from '@/components/AIApplications';
 import { Code, MessageSquare, Star, BarChart4, Bot, Zap, Settings, CloudCog } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { translations } from '@/locales';
+
 const Index = () => {
   const {
     language
@@ -77,35 +78,6 @@ const Index = () => {
       
       {/* AI Applications Section */}
       <AIApplications />
-      
-      {/* Testimonials Section */}
-      <section id="testimonials" className="section-padding bg-gradient-to-b from-ovnilab-background to-ovnilab-darkPurple relative">
-        <div className="absolute inset-0 bg-stars opacity-30"></div>
-        <div className="absolute w-64 h-64 blur-3xl rounded-full bg-ovnilab-teal/10 top-1/4 -right-32"></div>
-        <div className="absolute w-64 h-64 blur-3xl rounded-full bg-ovnilab-purple/10 bottom-1/4 -left-32"></div>
-        
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="text-center mb-16 reveal">
-            <p className="inline-block px-3 py-1 bg-ovnilab-purple/20 rounded-full text-ovnilab-teal text-sm font-medium mb-4">
-              {t.testimonials}
-            </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-              {t.whatOurClientsSay.split('Clients').map((part, i) => i === 0 ? <>{part}</> : part)}
-            </h2>
-            <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
-              {t.hearFromBusinesses}
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <TestimonialCard name="Sarah Johnson" position="CEO" company="TechFlow Inc." testimonial={t.testimonialsQuote1} image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" delay={100} />
-            
-            <TestimonialCard name="Michael Chen" position="Marketing Director" company="GrowthX" testimonial={t.testimonialsQuote2} image="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" delay={200} />
-            
-            <TestimonialCard name="Emily Rodriguez" position="Operations Manager" company="Streamline Solutions" testimonial={t.testimonialsQuote3} image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" delay={300} />
-          </div>
-        </div>
-      </section>
       
       {/* Contact Section */}
       <section id="contact" className="section-padding relative">
