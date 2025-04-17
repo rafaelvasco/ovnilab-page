@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Globe } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -35,12 +36,12 @@ const Navbar = () => {
       )}
     >
       <div className="flex items-center justify-between">
-        <a
-          href="#"
+        <Link
+          to="/"
           className="text-ovnilab-text font-space font-bold text-2xl md:text-3xl flex items-center"
         >
           <span className="text-gradient">OVNI</span>LAB
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
