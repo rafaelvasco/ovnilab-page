@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -55,7 +56,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="glass-card p-8 border border-white/10 max-w-xl w-full mx-auto transition-all hover:shadow-neon animate-fade-in">
+    <div className="glass-card p-8 border border-white/10 max-w-xl w-full mx-auto transition-all hover:shadow-none animate-fade-in">
       <h3 className="text-2xl font-bold mb-6 font-space">{t.getInTouch}</h3>
 
       <form onSubmit={handleSubmit} className="space-y-6">
@@ -149,7 +150,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={loading}
-          className="btn-primary w-full flex items-center justify-center"
+          className="btn-primary w-full flex items-center justify-center transition-all duration-300"
         >
           {loading ? (
             <>

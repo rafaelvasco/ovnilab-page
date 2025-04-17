@@ -122,7 +122,7 @@
   }
   
   .btn-primary:hover {
-    @apply bg-gradient-to-r from-ovnilab-cream to-ovnilab-blue;
+    @apply bg-gradient-to-l from-ovnilab-blue to-ovnilab-cream;
   }
   
   .btn-secondary {
@@ -130,7 +130,7 @@
   }
   
   .btn-secondary:hover {
-    @apply bg-gradient-to-r from-ovnilab-blue to-ovnilab-purple;
+    @apply bg-gradient-to-l from-ovnilab-purple to-ovnilab-blue;
   }
   
   .btn-outline {
