@@ -1,3 +1,4 @@
+
 import React from "react";
 import {
   School,
@@ -73,7 +74,7 @@ const AIApplications = () => {
           {applications.map((app, index) => (
             <Card
               key={app.title}
-              className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300"
+              className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-orange transition-all duration-300"
             >
               <CardHeader>
                 <div className="flex items-center gap-4">

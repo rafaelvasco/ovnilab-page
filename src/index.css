@@ -118,19 +118,25 @@
   }
   
   .btn-primary {
-    @apply px-6 py-3 rounded-full bg-gradient-to-r from-ovnilab-blue to-ovnilab-cream text-ovnilab-navy font-bold transition-all duration-300;
+    @apply px-6 py-3 rounded-full font-bold text-ovnilab-navy transition-all duration-300;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #33A9FF, #F7F7F9, #33A9FF);
+    background-position: right bottom;
   }
   
   .btn-primary:hover {
-    @apply bg-gradient-to-l from-ovnilab-blue to-ovnilab-cream;
+    background-position: left bottom;
   }
   
   .btn-secondary {
-    @apply px-6 py-3 rounded-full bg-gradient-to-r from-ovnilab-purple to-ovnilab-blue text-ovnilab-cream font-bold transition-all duration-300;
+    @apply px-6 py-3 rounded-full font-bold text-ovnilab-cream transition-all duration-300;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #8B5CF6, #33A9FF, #8B5CF6);
+    background-position: right bottom;
   }
   
   .btn-secondary:hover {
-    @apply bg-gradient-to-l from-ovnilab-purple to-ovnilab-blue;
+    background-position: left bottom;
   }
   
   .btn-outline {
@@ -138,7 +144,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-300 hover:border-ovnilab-cream/50;
+    @apply transition-all duration-300 hover:border-ovnilab-orange;
   }
   
   .section-padding {

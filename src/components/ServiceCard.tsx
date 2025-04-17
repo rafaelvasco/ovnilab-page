@@ -15,7 +15,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   icon
 }) => {
   return (
-    <div className="glass-card p-6 border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300">
+    <div className="glass-card p-6 border border-ovnilab-cream/10 hover:border-ovnilab-orange transition-all duration-300">
       <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-ovnilab-cream/10">
         <div className="text-ovnilab-cream">
           {icon}

@@ -56,7 +56,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="glass-card p-8 border border-white/10 max-w-xl w-full mx-auto transition-all hover:shadow-none animate-fade-in">
+    <div className="glass-card p-8 border border-white/10 max-w-xl w-full mx-auto transition-all duration-300 hover:border-ovnilab-orange animate-fade-in">
       <h3 className="text-2xl font-bold mb-6 font-space">{t.getInTouch}</h3>
 
       <form onSubmit={handleSubmit} className="space-y-6">

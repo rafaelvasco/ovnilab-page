@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
@@ -38,7 +39,7 @@ const News = () => {
           {newsItems.map((item) => (
             <Card
               key={item.title}
-              className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300"
+              className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-orange transition-all duration-300"
             >
               <CardHeader>
                 <div className="flex items-center gap-2 text-ovnilab-cream mb-2">

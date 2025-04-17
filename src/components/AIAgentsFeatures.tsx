@@ -49,7 +49,7 @@ const AIAgentsFeatures = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature) => (
-            <Card key={feature.title} className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300">
+            <Card key={feature.title} className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-orange transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="bg-ovnilab-cream/10 p-2 rounded-xl">
