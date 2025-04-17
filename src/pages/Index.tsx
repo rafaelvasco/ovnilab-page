@@ -15,6 +15,7 @@ const Index = () => {
     language
   } = useLanguage();
   const t = translations[language];
+  
   useEffect(() => {
     // Reveal animations on scroll
     const handleScroll = () => {
@@ -33,6 +34,7 @@ const Index = () => {
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
   return <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
@@ -102,4 +104,5 @@ const Index = () => {
       <Footer />
     </div>;
 };
+
 export default Index;

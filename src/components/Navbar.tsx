@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import { Globe } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { translations } from '@/locales';
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
     language,
     setLanguage
   } = useLanguage();
+
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 10;
@@ -18,12 +20,15 @@ const Navbar = () => {
         setScrolled(isScrolled);
       }
     };
+
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrolled]);
+
   const t = translations[language];
+
   return <nav className={cn("fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-4 px-6 md:px-12 lg:px-24", scrolled ? "bg-ovnilab-background/80 backdrop-blur-lg shadow-lg" : "bg-transparent")}>
       <div className="flex items-center justify-between">
         <a href="#" className="text-ovnilab-text font-space font-bold text-2xl md:text-3xl flex items-center">
@@ -35,8 +40,8 @@ const Navbar = () => {
           <a href="#services" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
             {t.services}
           </a>
-          <a href="#testimonials" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
-            {t.testimonials}
+          <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors">
+            {t.contact}
           </a>
           <a href="#contact" className="text-ovnilab-text transition-colors btn-primary">
             {t.getExpertHelp}
@@ -78,8 +83,8 @@ const Navbar = () => {
           <a href="#services" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2" onClick={() => setMenuOpen(false)}>
             {t.services}
           </a>
-          <a href="#testimonials" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2" onClick={() => setMenuOpen(false)}>
-            {t.testimonials}
+          <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2" onClick={() => setMenuOpen(false)}>
+            {t.contact}
           </a>
           <a href="#contact" className="text-ovnilab-text hover:text-ovnilab-teal transition-colors py-2 btn-primary inline-block text-center" onClick={() => setMenuOpen(false)}>
             {t.getExpertHelp}
@@ -99,4 +104,5 @@ const Navbar = () => {
       </div>
     </nav>;
 };
+
 export default Navbar;

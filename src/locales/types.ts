@@ -1,4 +1,3 @@
-
 export type Translations = {
   services: string;
   contact: string;
@@ -68,4 +67,6 @@ export type Translations = {
   marketplaceDesc: string;
   andMoreTitle: string;
   andMoreDesc: string;
+  // Testimonials section (keep for navigation)
+  testimonials: string;
 };

@@ -81,9 +81,6 @@ const Footer = () => {
                 <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.caseStudies}</a>
               </li>
               <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.testimonials}</a>
-              </li>
-              <li>
                 <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-teal transition-colors">{t.blog}</a>
               </li>
               <li>

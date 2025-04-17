@@ -1,3 +1,4 @@
+
 import { Translations } from './types';
 
 export const en: Translations = {
@@ -25,10 +26,8 @@ export const en: Translations = {
   marketingAutomationDesc: 'AI-powered content creation, campaign management, and customer journey optimization for improved conversion rates.',
   customAISolutionsTitle: 'Custom AI Solutions',
   customAISolutionsDesc: 'Tailored artificial intelligence applications designed specifically for your unique business challenges and opportunities.',
-  // Testimonials
-  testimonialsQuote1: 'OVNILAB\'s AI customer support agents have revolutionized our support operations. We\'ve reduced response times by 80% while improving customer satisfaction scores.',
-  testimonialsQuote2: 'The marketing automation platform they built for us has transformed our lead nurturing process. Our conversion rates have increased by 45% in just three months.',
-  testimonialsQuote3: 'Implementing OVNILAB\'s business process automation has cut our operational costs by 30% and freed up our team to focus on strategic initiatives instead of repetitive tasks.',
+  // Testimonials (navigation reference)
+  testimonials: 'Testimonials',
   // Contact form
   getInTouch: 'Get in Touch',
   name: 'Name',

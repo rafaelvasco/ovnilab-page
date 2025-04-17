@@ -1,3 +1,4 @@
+
 import { Translations } from './types';
 
 export const es: Translations = {
@@ -25,10 +26,8 @@ export const es: Translations = {
   marketingAutomationDesc: 'Creación de contenido impulsada por IA, gestión de campañas y optimización del recorrido del cliente para mejorar las tasas de conversión.',
   customAISolutionsTitle: 'Soluciones de IA Personalizadas',
   customAISolutionsDesc: 'Aplicaciones de inteligencia artificial adaptadas específicamente para tus desafíos y oportunidades empresariales únicas.',
-  // Testimonials
-  testimonialsQuote1: 'Los agentes de atención al cliente con IA de OVNILAB han revolucionado nuestras operaciones de soporte. Hemos reducido los tiempos de respuesta en un 80% mientras mejoramos las puntuaciones de satisfacción del cliente.',
-  testimonialsQuote2: 'La plataforma de automatización de marketing que construyeron para nosotros ha transformado nuestro proceso de nutrición de leads. Nuestras tasas de conversión han aumentado un 45% en solo tres meses.',
-  testimonialsQuote3: 'Implementar la automatización de procesos de negocio de OVNILAB ha reducido nuestros costos operativos en un 30% y ha liberado a nuestro equipo para enfocarse en iniciativas estratégicas en lugar de tareas repetitivas.',
+  // Testimonials (navigation reference)
+  testimonials: 'Testimonios',
   // Contact form
   getInTouch: 'Ponte en Contacto',
   name: 'Nombre',
