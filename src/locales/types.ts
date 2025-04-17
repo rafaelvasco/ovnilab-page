@@ -1,3 +1,4 @@
+
 export interface Translations {
   ourServices: string;
   transformBusiness: string;
@@ -20,19 +21,36 @@ export interface Translations {
   heroTitle: string;
   heroSubtitle: string;
   contactUs: string;
+  exploreServices: string;
+  getStarted: string;
 
   // Features section
-  keyFeatures: string;
-  aiDrivenAutomation: string;
-  aiDrivenAutomationDesc: string;
-  smartAnalytics: string;
-  smartAnalyticsDesc: string;
-  personalizedExperiences: string;
-  personalizedExperiencesDesc: string;
+  features: string;
+  featuresTitle: string;
+  featuresDesc: string;
+  featureAutoTitle: string;
+  featureAutoDesc: string;
+  featureBotTitle: string;
+  featureBotDesc: string;
+  featureSpeedTitle: string;
+  featureSpeedDesc: string;
+  featureIntegrationTitle: string;
+  featureIntegrationDesc: string;
   
   // AI Agents Features Section
+  aiAgentsFeatures: string;
+  aiAgentsFeaturesTitle: string;
+  aiAgentsFeaturesDesc: string;
   aiAgentsTitle: string;
   aiAgentsDescription: string;
+  whatsappAgentTitle: string;
+  whatsappAgentDesc: string;
+  instagramAgentTitle: string;
+  instagramAgentDesc: string;
+  websiteAgentTitle: string;
+  websiteAgentDesc: string;
+  voiceAgentTitle: string;
+  voiceAgentDesc: string;
   customerServiceAutomation: string;
   customerServiceAutomationDesc: string;
   salesProcessOptimization: string;
@@ -42,6 +60,20 @@ export interface Translations {
 
   // AI Applications section
   aiApplications: string;
+  transformingIndustries: string;
+  discoverSolutions: string;
+  schoolServicesTitle: string;
+  schoolServicesDesc: string;
+  medicalClinicsTitle: string;
+  medicalClinicsDesc: string;
+  gymsTitle: string;
+  gymsDesc: string;
+  dataAiAgentTitle: string;
+  dataAiAgentDesc: string;
+  marketplaceTitle: string;
+  marketplaceDesc: string;
+  andMoreTitle: string;
+  andMoreDesc: string;
   enhanceCustomerExperiences: string;
   enhanceCustomerExperiencesDesc: string;
   automateTasks: string;
@@ -59,6 +91,26 @@ export interface Translations {
   send: string;
   successMessage: string;
   errorMessage: string;
+  getInTouch: string;
+  name: string;
+  yourName: string;
+  yourEmail: string;
+  company: string;
+  yourCompany: string;
+  interestedIn: string;
+  tellUs: string;
+  sending: string;
+  sendMessage: string;
+
+  // News section
+  news: string;
+  newsTitle: string;
+  news1Date: string;
+  news1Title: string;
+  news1Content: string;
+  news2Date: string;
+  news2Title: string;
+  news2Content: string;
 
   // Navbar
   home: string;
@@ -68,7 +120,19 @@ export interface Translations {
   news: string;
 
   // Footer
+  footerDesc: string;
+  footerServices: string;
+  footerCompany: string;
+  footerContact: string;
+  businessProcessAutomation: string;
+  marketingAutomation: string;
+  customAISolutions: string;
+  aiIntegration: string;
+  aboutUs: string;
+  caseStudies: string;
+  careers: string;
   allRightsReserved: string;
+  testimonials: string;
 
   // Not Found page
   returnHome: string;
