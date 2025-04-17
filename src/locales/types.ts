@@ -1,0 +1,79 @@
+
+export type Translations = {
+  services: string;
+  testimonials: string;
+  contact: string;
+  getStarted: string;
+  getExpertHelp: string;
+  exploreServices: string;
+  contactUs: string;
+  ourServices: string;
+  transformBusiness: string;
+  cuttingEdgeAI: string;
+  whatOurClientsSay: string;
+  hearFromBusinesses: string;
+  readyToTransform: string;
+  fillOutForm: string;
+  // Service cards
+  aiCustomerSupportTitle: string;
+  aiCustomerSupportDesc: string;
+  aiSalesAssistantsTitle: string;
+  aiSalesAssistantsDesc: string;
+  schedulingAgentsTitle: string;
+  schedulingAgentsDesc: string;
+  businessProcessTitle: string;
+  businessProcessDesc: string;
+  marketingAutomationTitle: string;
+  marketingAutomationDesc: string;
+  customAISolutionsTitle: string;
+  customAISolutionsDesc: string;
+  // Testimonials
+  testimonialsQuote1: string;
+  testimonialsQuote2: string;
+  testimonialsQuote3: string;
+  // Contact form
+  getInTouch: string;
+  name: string;
+  email: string;
+  company: string;
+  interestedIn: string;
+  message: string;
+  yourName: string;
+  yourEmail: string;
+  yourCompany: string;
+  tellUs: string;
+  sendMessage: string;
+  sending: string;
+  // Footer
+  footerDesc: string;
+  footerServices: string;
+  footerCompany: string;
+  footerContact: string;
+  aiAgents: string;
+  businessProcessAutomation: string;
+  marketingAutomation: string;
+  customAISolutions: string;
+  aiIntegration: string;
+  aboutUs: string;
+  caseStudies: string;
+  blog: string;
+  careers: string;
+  allRightsReserved: string;
+  // AI Applications section
+  aiApplications: string;
+  transformingIndustries: string;
+  discoverSolutions: string;
+  schoolServicesTitle: string;
+  schoolServicesDesc: string;
+  medicalClinicsTitle: string;
+  medicalClinicsDesc: string;
+  gymsTitle: string;
+  gymsDesc: string;
+  dataAiAgentTitle: string;
+  dataAiAgentDesc: string;
+  marketplaceTitle: string;
+  marketplaceDesc: string;
+  andMoreTitle: string;
+  andMoreDesc: string;
+};
+
