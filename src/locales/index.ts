@@ -58,6 +58,22 @@ export type Translations = {
   blog: string;
   careers: string;
   allRightsReserved: string;
+  // AI Applications section
+  aiApplications: string;
+  transformingIndustries: string;
+  discoverSolutions: string;
+  schoolServicesTitle: string;
+  schoolServicesDesc: string;
+  medicalClinicsTitle: string;
+  medicalClinicsDesc: string;
+  gymsTitle: string;
+  gymsDesc: string;
+  dataAiAgentTitle: string;
+  dataAiAgentDesc: string;
+  marketplaceTitle: string;
+  marketplaceDesc: string;
+  andMoreTitle: string;
+  andMoreDesc: string;
 };
 
 export const translations: Record<string, Translations> = {
@@ -120,7 +136,23 @@ export const translations: Record<string, Translations> = {
     caseStudies: 'Case Studies',
     blog: 'Blog',
     careers: 'Careers',
-    allRightsReserved: 'All rights reserved.'
+    allRightsReserved: 'All rights reserved.',
+    // AI Applications section
+    aiApplications: 'AI Applications',
+    transformingIndustries: 'Transforming Industries',
+    discoverSolutions: 'Discover how our AI solutions are revolutionizing different sectors',
+    schoolServicesTitle: 'School Services',
+    schoolServicesDesc: 'Streamline enrollment processes and enhance student services with AI-powered solutions.',
+    medicalClinicsTitle: 'Medical Clinics',
+    medicalClinicsDesc: 'Improve patient care and optimize appointment scheduling with intelligent automation.',
+    gymsTitle: 'Gyms',
+    gymsDesc: 'Enhance member experience and automate class scheduling with AI assistance.',
+    dataAiAgentTitle: 'Data AI Agent (RAG)',
+    dataAiAgentDesc: 'Leverage your data with retrieval-augmented generation for intelligent insights.',
+    marketplaceTitle: 'Marketplace',
+    marketplaceDesc: 'Optimize your online marketplace with AI-powered recommendations and automation.',
+    andMoreTitle: 'And More',
+    andMoreDesc: 'Discover custom AI solutions tailored to your industry needs.',
   },
   es: {
     services: 'Servicios',
@@ -181,7 +213,23 @@ export const translations: Record<string, Translations> = {
     caseStudies: 'Casos de Estudio',
     blog: 'Blog',
     careers: 'Carreras',
-    allRightsReserved: 'Todos los derechos reservados.'
+    allRightsReserved: 'Todos los derechos reservados.',
+    // AI Applications section
+    aiApplications: 'Aplicaciones de IA',
+    transformingIndustries: 'Transformando Industrias',
+    discoverSolutions: 'Descubre cómo nuestras soluciones de IA están revolucionando diferentes sectores',
+    schoolServicesTitle: 'Servicios Escolares',
+    schoolServicesDesc: 'Optimiza los procesos de inscripción y mejora los servicios estudiantiles con soluciones impulsadas por IA.',
+    medicalClinicsTitle: 'Clínicas Médicas',
+    medicalClinicsDesc: 'Mejora la atención al paciente y optimiza la programación de citas con automatización inteligente.',
+    gymsTitle: 'Gimnasios',
+    gymsDesc: 'Mejora la experiencia de los miembros y automatiza la programación de clases con asistencia de IA.',
+    dataAiAgentTitle: 'Agente de IA de Datos (RAG)',
+    dataAiAgentDesc: 'Aprovecha tus datos con generación aumentada por recuperación para obtener información inteligente.',
+    marketplaceTitle: 'Mercado',
+    marketplaceDesc: 'Optimiza tu mercado en línea con recomendaciones y automatización impulsadas por IA.',
+    andMoreTitle: 'Y Más',
+    andMoreDesc: 'Descubre soluciones de IA personalizadas adaptadas a las necesidades de tu industria.',
   },
   'pt-br': {
     services: 'Serviços',
@@ -242,6 +290,22 @@ export const translations: Record<string, Translations> = {
     caseStudies: 'Casos de Sucesso',
     blog: 'Blog',
     careers: 'Carreiras',
-    allRightsReserved: 'Todos os direitos reservados.'
+    allRightsReserved: 'Todos os direitos reservados.',
+    // AI Applications section
+    aiApplications: 'Aplicações de IA',
+    transformingIndustries: 'Transformando Indústrias',
+    discoverSolutions: 'Descubra como nossas soluções de IA estão revolucionando diferentes setores',
+    schoolServicesTitle: 'Serviços Escolares',
+    schoolServicesDesc: 'Otimize processos de matrícula e melhore os serviços estudantis com soluções alimentadas por IA.',
+    medicalClinicsTitle: 'Clínicas Médicas',
+    medicalClinicsDesc: 'Melhore o atendimento ao paciente e otimize o agendamento de consultas com automação inteligente.',
+    gymsTitle: 'Academias',
+    gymsDesc: 'Aprimore a experiência dos membros e automatize o agendamento de aulas com assistência de IA.',
+    dataAiAgentTitle: 'Agente de IA de Dados (RAG)',
+    dataAiAgentDesc: 'Aproveite seus dados com geração aumentada por recuperação para insights inteligentes.',
+    marketplaceTitle: 'Marketplace',
+    marketplaceDesc: 'Otimize seu marketplace online com recomendações e automação alimentadas por IA.',
+    andMoreTitle: 'E Mais',
+    andMoreDesc: 'Descubra soluções de IA personalizadas adaptadas às necessidades da sua indústria.',
   }
 };

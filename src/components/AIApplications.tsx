@@ -2,55 +2,63 @@
 import React from 'react';
 import { School, Stethoscope, Dumbbell, Database, Store, MoreHorizontal } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
+import { translations } from '@/locales';
 import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 
-const applications = [
-  {
-    icon: <School className="w-8 h-8 text-ovnilab-teal" />,
-    title: 'School Services',
-    description: 'Streamline enrollment processes and enhance student services with AI-powered solutions.',
-  },
-  {
-    icon: <Stethoscope className="w-8 h-8 text-ovnilab-green" />,
-    title: 'Medical Clinics',
-    description: 'Improve patient care and optimize appointment scheduling with intelligent automation.',
-  },
-  {
-    icon: <Dumbbell className="w-8 h-8 text-ovnilab-purple" />,
-    title: 'Gyms',
-    description: 'Enhance member experience and automate class scheduling with AI assistance.',
-  },
-  {
-    icon: <Database className="w-8 h-8 text-ovnilab-teal" />,
-    title: 'Data AI Agent (RAG)',
-    description: 'Leverage your data with retrieval-augmented generation for intelligent insights.',
-  },
-  {
-    icon: <Store className="w-8 h-8 text-ovnilab-green" />,
-    title: 'Marketplace',
-    description: 'Optimize your online marketplace with AI-powered recommendations and automation.',
-  },
-  {
-    icon: <MoreHorizontal className="w-8 h-8 text-ovnilab-purple" />,
-    title: 'And More',
-    description: 'Discover custom AI solutions tailored to your industry needs.',
-  },
-];
-
 const AIApplications = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
+  const applications = [
+    {
+      icon: <School className="w-8 h-8 text-ovnilab-teal" />,
+      title: t.schoolServicesTitle,
+      description: t.schoolServicesDesc,
+    },
+    {
+      icon: <Stethoscope className="w-8 h-8 text-ovnilab-green" />,
+      title: t.medicalClinicsTitle,
+      description: t.medicalClinicsDesc,
+    },
+    {
+      icon: <Dumbbell className="w-8 h-8 text-ovnilab-purple" />,
+      title: t.gymsTitle,
+      description: t.gymsDesc,
+    },
+    {
+      icon: <Database className="w-8 h-8 text-ovnilab-teal" />,
+      title: t.dataAiAgentTitle,
+      description: t.dataAiAgentDesc,
+    },
+    {
+      icon: <Store className="w-8 h-8 text-ovnilab-green" />,
+      title: t.marketplaceTitle,
+      description: t.marketplaceDesc,
+    },
+    {
+      icon: <MoreHorizontal className="w-8 h-8 text-ovnilab-purple" />,
+      title: t.andMoreTitle,
+      description: t.andMoreDesc,
+    },
+  ];
+
   return (
     <section className="section-padding relative">
       <div className="absolute inset-0 bg-stars opacity-30"></div>
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16 reveal">
           <p className="inline-block px-3 py-1 bg-ovnilab-purple/20 rounded-full text-ovnilab-teal text-sm font-medium mb-4">
-            AI Applications
+            {t.aiApplications}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-            Transforming <span className="text-gradient">Industries</span>
+            {t.transformingIndustries.split('Transform').map((part, i) => 
+              i === 0 ? 
+                <>{part}<span className="text-gradient">Transform</span></> : 
+                part
+            )}
           </h2>
           <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
-            Discover how our AI solutions are revolutionizing different sectors
+            {t.discoverSolutions}
           </p>
         </div>
 
