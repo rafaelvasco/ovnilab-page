@@ -1,5 +1,5 @@
 
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import { cn } from "@/lib/utils";
 
 interface ServiceCardProps {
@@ -7,56 +7,26 @@ interface ServiceCardProps {
   description: string;
   icon: React.ReactNode;
   color: 'teal' | 'green' | 'purple' | 'orange';
-  delay?: number;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
   icon,
-  color,
-  delay = 0
+  color
 }) => {
-  const cardRef = useRef<HTMLDivElement>(null);
-  
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add('active');
-            }, delay);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    
-    if (cardRef.current) {
-      observer.observe(cardRef.current);
-    }
-    
-    return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
-  }, [delay]);
-
   const getColorClasses = () => {
     switch (color) {
       case 'teal':
-        return 'border-ovnilab-teal/30 hover:shadow-neon';
+        return 'border-ovnilab-teal/30';
       case 'green':
-        return 'border-ovnilab-green/30 hover:shadow-neon-green';
+        return 'border-ovnilab-green/30';
       case 'purple':
-        return 'border-ovnilab-lightPurple/30 hover:shadow-neon-purple';
+        return 'border-ovnilab-lightPurple/30';
       case 'orange':
-        return 'border-ovnilab-orange/30 hover:shadow-[0_0_10px_rgba(255,180,99,0.5),0_0_20px_rgba(255,180,99,0.3)]';
+        return 'border-ovnilab-orange/30';
       default:
-        return 'border-ovnilab-teal/30 hover:shadow-neon';
+        return 'border-ovnilab-teal/30';
     }
   };
 
@@ -91,18 +61,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   };
 
   return (
-    <div
-      ref={cardRef}
-      className={cn(
-        "glass-card p-6 border transition-all duration-500 reveal h-full",
-        "hover:-translate-y-2",
-        getColorClasses()
-      )}
-    >
-      <div className={cn(
-        "w-14 h-14 rounded-xl flex items-center justify-center mb-6",
-        getIconBgClasses()
-      )}>
+    <div className={cn("glass-card p-6 border", getColorClasses())}>
+      <div className={cn("w-14 h-14 rounded-xl flex items-center justify-center mb-6", getIconBgClasses())}>
         <div className={getIconClasses()}>
           {icon}
         </div>
