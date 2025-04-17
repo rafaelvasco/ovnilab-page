@@ -23,6 +23,14 @@ const BlogPost = () => {
   
   if (!post) return null;
 
+  // Configure marked options for better rendering
+  marked.setOptions({
+    gfm: true,
+    breaks: true,
+    smartLists: true,
+    smartypants: true,
+  });
+
   const contentHtml = marked(post.content);
 
   return (
@@ -52,7 +60,7 @@ const BlogPost = () => {
             </h1>
           </div>
           
-          <div className="prose prose-invert prose-lg max-w-none">
+          <div className="prose prose-invert prose-lg max-w-none prose-headings:font-space prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-h4:text-xl prose-p:text-ovnilab-text prose-a:text-ovnilab-blue hover:prose-a:text-ovnilab-orange prose-strong:text-ovnilab-cream prose-blockquote:border-ovnilab-blue prose-blockquote:text-ovnilab-cream/80 prose-pre:bg-black/30 prose-pre:backdrop-blur-sm prose-code:text-ovnilab-orange prose-ul:text-ovnilab-text prose-ol:text-ovnilab-text prose-li:marker:text-ovnilab-blue">
             <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
           </div>
         </div>
