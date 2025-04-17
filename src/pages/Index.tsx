@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -6,6 +5,7 @@ import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import AIApplications from '@/components/AIApplications';
 import { Code, MessageSquare, Star, BarChart4, Bot, Zap, Settings, CloudCog } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { translations } from '@/locales';
@@ -119,6 +119,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      {/* AI Applications Section */}
+      <AIApplications />
       
       {/* Testimonials Section */}
       <section id="testimonials" className="section-padding bg-gradient-to-b from-ovnilab-background to-ovnilab-darkPurple relative">
