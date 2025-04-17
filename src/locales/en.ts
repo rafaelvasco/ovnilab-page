@@ -131,4 +131,9 @@ export const en: Translations = {
   voiceAgentTitle: "Voice Agent",
   voiceAgentDesc:
     "Natural voice interactions for phone support, meeting scheduling, and hands-free operation of your services.",
+  // Blog translations
+  blog: "Blog",
+  blogTitle: "Our Blog",
+  blogDescription: "Discover the latest insights and news about AI and automation.",
+  viewAllPosts: "View All Posts",
 };

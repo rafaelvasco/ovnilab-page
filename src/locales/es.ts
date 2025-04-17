@@ -104,4 +104,9 @@ export const es: Translations = {
   websiteAgentDesc: 'Interactúa con visitantes mediante soporte de chat personalizado, califica leads y guía a usuarios por tu sitio web con asistencia contextual.',
   voiceAgentTitle: 'Agente de Voz',
   voiceAgentDesc: 'Interacciones de voz naturales para soporte telefónico, programación de reuniones y operación manos libres de tus servicios.',
+  // Blog translations
+  blog: "Blog",
+  blogTitle: "Nuestro Blog",
+  blogDescription: "Descubre las últimas novedades y noticias sobre IA y automatización.",
+  viewAllPosts: "Ver Todas las Publicaciones",
 };

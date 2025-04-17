@@ -1,16 +1,7 @@
-export type Translations = {
-  services: string;
-  contact: string;
-  getStarted: string;
-  getExpertHelp: string;
-  exploreServices: string;
-  contactUs: string;
+export interface Translations {
   ourServices: string;
   transformBusiness: string;
   cuttingEdgeAI: string;
-  readyToTransform: string;
-  fillOutForm: string;
-  // Service cards
   aiCustomerSupportTitle: string;
   aiCustomerSupportDesc: string;
   aiSalesAssistantsTitle: string;
@@ -23,83 +14,68 @@ export type Translations = {
   marketingAutomationDesc: string;
   customAISolutionsTitle: string;
   customAISolutionsDesc: string;
-  // Contact form
-  getInTouch: string;
-  name: string;
-  email: string;
-  company: string;
-  interestedIn: string;
-  message: string;
-  yourName: string;
-  yourEmail: string;
-  yourCompany: string;
-  tellUs: string;
-  sendMessage: string;
-  sending: string;
-  // Footer
-  footerDesc: string;
-  footerServices: string;
-  footerCompany: string;
-  footerContact: string;
-  aiAgents: string;
-  businessProcessAutomation: string;
-  marketingAutomation: string;
-  customAISolutions: string;
-  aiIntegration: string;
-  aboutUs: string;
-  caseStudies: string;
-  blog: string;
-  careers: string;
-  allRightsReserved: string;
+  getExpertHelp: string;
+  
+  // Hero section
+  heroTitle: string;
+  heroSubtitle: string;
+  contactUs: string;
+
+  // Features section
+  keyFeatures: string;
+  aiDrivenAutomation: string;
+  aiDrivenAutomationDesc: string;
+  smartAnalytics: string;
+  smartAnalyticsDesc: string;
+  personalizedExperiences: string;
+  personalizedExperiencesDesc: string;
+  
+  // AI Agents Features Section
+  aiAgentsTitle: string;
+  aiAgentsDescription: string;
+  customerServiceAutomation: string;
+  customerServiceAutomationDesc: string;
+  salesProcessOptimization: string;
+  salesProcessOptimizationDesc: string;
+  streamlinedScheduling: string;
+  streamlinedSchedulingDesc: string;
+
   // AI Applications section
   aiApplications: string;
-  transformingIndustries: string;
-  discoverSolutions: string;
-  schoolServicesTitle: string;
-  schoolServicesDesc: string;
-  medicalClinicsTitle: string;
-  medicalClinicsDesc: string;
-  gymsTitle: string;
-  gymsDesc: string;
-  dataAiAgentTitle: string;
-  dataAiAgentDesc: string;
-  marketplaceTitle: string;
-  marketplaceDesc: string;
-  andMoreTitle: string;
-  andMoreDesc: string;
-  // Testimonials section (keep for navigation)
-  testimonials: string;
-  // Features section
-  features: string;
-  featuresTitle: string;
-  featuresDesc: string;
-  featureAutoTitle: string;
-  featureAutoDesc: string;
-  featureBotTitle: string;
-  featureBotDesc: string;
-  featureSpeedTitle: string;
-  featureSpeedDesc: string;
-  featureIntegrationTitle: string;
-  featureIntegrationDesc: string;
-  // News section
+  enhanceCustomerExperiences: string;
+  enhanceCustomerExperiencesDesc: string;
+  automateTasks: string;
+  automateTasksDesc: string;
+  improveDecisionMaking: string;
+  improveDecisionMakingDesc: string;
+
+  // Contact form
+  contact: string;
+  readyToTransform: string;
+  fillOutForm: string;
+  fullName: string;
+  email: string;
+  message: string;
+  send: string;
+  successMessage: string;
+  errorMessage: string;
+
+  // Navbar
+  home: string;
+  services: string;
+  aiAgents: string;
+  applications: string;
   news: string;
-  newsTitle: string;
-  news1Date: string;
-  news1Title: string;
-  news1Content: string;
-  news2Date: string;
-  news2Title: string;
-  news2Content: string;
-  // AI Agents Features section
-  aiAgentsFeatures: string;
-  aiAgentsFeaturesTitle: string;
-  aiAgentsFeaturesDesc: string;
-  whatsappAgentTitle: string;
-  whatsappAgentDesc: string;
-  instagramAgentTitle: string;
-  instagramAgentDesc: string;
-  websiteAgentTitle: string;
-  websiteAgentDesc: string;
-  voiceAgentTitle: string;
-  voiceAgentDesc: string;
-};
+
+  // Footer
+  allRightsReserved: string;
+
+  // Not Found page
+  returnHome: string;
+
+  // Blog translations
+  blog: string;
+  blogTitle: string;
+  blogDescription: string;
+  viewAllPosts: string;
+}

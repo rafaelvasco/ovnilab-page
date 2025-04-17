@@ -2,7 +2,7 @@
 import React from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Calendar } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
@@ -10,6 +10,11 @@ import { blogPosts } from "@/data/blogPosts";
 const BlogSection = () => {
   const { language } = useLanguage();
   const t = translations[language];
+  const navigate = useNavigate();
+
+  const handleNavigate = (slug: string) => {
+    navigate(`/blog/${slug}`);
+  };
 
   return (
     <section className="section-padding relative">
@@ -26,7 +31,11 @@ const BlogSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {blogPosts.map((post) => (
-            <Link to={`/blog/${post.slug}`} key={post.id}>
+            <div 
+              key={post.id}
+              onClick={() => handleNavigate(post.slug)} 
+              className="cursor-pointer"
+            >
               <Card className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-orange hover:cursor-pointer transition-all duration-300 h-full">
                 <CardHeader>
                   <div className="flex items-center gap-2 text-ovnilab-cream mb-2">
@@ -41,14 +50,17 @@ const BlogSection = () => {
                   <p className="text-ovnilab-text/80">{post.excerpt}</p>
                 </CardContent>
               </Card>
-            </Link>
+            </div>
           ))}
         </div>
         
         <div className="mt-8 text-center">
-          <Link to="/blog" className="btn-outline">
-            {t.viewAllPosts || "View All Posts"}
-          </Link>
+          <button 
+            onClick={() => navigate('/blog')} 
+            className="btn-outline"
+          >
+            {t.viewAllPosts}
+          </button>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { blogPosts } from "@/data/blogPosts";
 import { Calendar, ArrowLeft } from "lucide-react";
 import { marked } from "marked";
@@ -33,10 +33,13 @@ const BlogPost = () => {
         <div className="absolute inset-0 bg-stars opacity-30"></div>
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="mb-8">
-            <Link to="/blog" className="inline-flex items-center text-ovnilab-teal hover:text-ovnilab-orange transition-colors">
+            <button 
+              onClick={() => navigate("/blog")} 
+              className="inline-flex items-center text-ovnilab-teal hover:text-ovnilab-orange transition-colors"
+            >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Blog
-            </Link>
+            </button>
           </div>
           
           <div className="mb-8">
