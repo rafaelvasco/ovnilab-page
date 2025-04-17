@@ -117,7 +117,6 @@ export interface Translations {
   services: string;
   aiAgents: string;
   applications: string;
-  news: string;
 
   // Footer
   footerDesc: string;

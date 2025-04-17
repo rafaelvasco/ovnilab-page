@@ -1,3 +1,4 @@
+
 import { Translations } from "./types";
 
 export const en: Translations = {
@@ -14,6 +15,7 @@ export const en: Translations = {
   readyToTransform: "Ready to Transform Your Business?",
   fillOutForm:
     "Fill out the form below and we'll get back to you within 24 hours",
+  
   // Service cards
   aiCustomerSupportTitle: "AI Customer Support Agents",
   aiCustomerSupportDesc:
@@ -33,8 +35,14 @@ export const en: Translations = {
   customAISolutionsTitle: "Custom AI Solutions",
   customAISolutionsDesc:
     "Tailored artificial intelligence applications designed specifically for your unique business challenges and opportunities.",
-  // Testimonials (navigation reference)
+  
+  // Hero section
+  heroTitle: "AI-Powered Business Solutions",
+  heroSubtitle: "Transform your operations with intelligent automation",
+  
+  // Testimonials
   testimonials: "Testimonials",
+  
   // Contact form
   getInTouch: "Get in Touch",
   name: "Name",
@@ -48,6 +56,7 @@ export const en: Translations = {
   tellUs: "Tell us about your project or requirements",
   sendMessage: "Send Message",
   sending: "Sending...",
+  
   // Footer
   footerDesc:
     "Transforming businesses with AI agents and smart automation solutions that drive efficiency and growth.",
@@ -64,6 +73,7 @@ export const en: Translations = {
   blog: "Blog",
   careers: "Careers",
   allRightsReserved: "All rights reserved.",
+  
   // AI Applications section
   aiApplications: "AI Applications",
   transformingIndustries: "Transforming Industries",
@@ -86,6 +96,13 @@ export const en: Translations = {
     "Optimize your online marketplace with AI-powered recommendations and automation.",
   andMoreTitle: "And More",
   andMoreDesc: "Discover custom AI solutions tailored to your industry needs.",
+  enhanceCustomerExperiences: "Enhance Customer Experiences",
+  enhanceCustomerExperiencesDesc: "Create personalized interactions that delight customers",
+  automateTasks: "Automate Tasks",
+  automateTasksDesc: "Free up your team's time for high-value activities",
+  improveDecisionMaking: "Improve Decision Making",
+  improveDecisionMakingDesc: "Leverage data insights for better business outcomes",
+  
   // Features section
   features: "Features",
   featuresTitle: "Future of Business Automation",
@@ -103,6 +120,7 @@ export const en: Translations = {
   featureIntegrationTitle: "Seamless Integration",
   featureIntegrationDesc:
     "Easy integration with your existing tools and workflows",
+  
   // News section
   news: "News",
   newsTitle: "Latest Updates",
@@ -114,11 +132,14 @@ export const en: Translations = {
   news2Title: "Partnership Announcement",
   news2Content:
     "Strategic partnership with leading tech companies to expand our AI solutions",
+  
   // AI Agents Features section
   aiAgentsFeatures: "AI Agents",
   aiAgentsFeaturesTitle: "Intelligent AI Agents for Every Channel",
   aiAgentsFeaturesDesc:
     "Our AI agents seamlessly integrate with your preferred communication channels",
+  aiAgentsTitle: "Versatile AI Agents",
+  aiAgentsDescription: "Our AI agents adapt to your business needs",
   whatsappAgentTitle: "WhatsApp Agent",
   whatsappAgentDesc:
     "Handle customer inquiries 24/7, automate appointment bookings, and provide instant product information through WhatsApp messaging.",
@@ -131,9 +152,28 @@ export const en: Translations = {
   voiceAgentTitle: "Voice Agent",
   voiceAgentDesc:
     "Natural voice interactions for phone support, meeting scheduling, and hands-free operation of your services.",
+  customerServiceAutomation: "Customer Service Automation",
+  customerServiceAutomationDesc: "Automate repetitive customer service tasks",
+  salesProcessOptimization: "Sales Process Optimization",
+  salesProcessOptimizationDesc: "Improve your sales funnel with intelligent assistance",
+  streamlinedScheduling: "Streamlined Scheduling",
+  streamlinedSchedulingDesc: "Eliminate back-and-forth emails for setting appointments",
+  
+  // Navigation
+  home: "Home",
+  applications: "Applications",
+  
+  // Not Found page
+  returnHome: "Return Home",
+  
   // Blog translations
-  blog: "Blog",
   blogTitle: "Our Blog",
   blogDescription: "Discover the latest insights and news about AI and automation.",
   viewAllPosts: "View All Posts",
+  
+  // Additional form fields
+  fullName: "Full Name",
+  send: "Send",
+  successMessage: "Your message has been sent successfully!",
+  errorMessage: "There was an error sending your message. Please try again."
 };

@@ -1,3 +1,4 @@
+
 import { Translations } from './types';
 
 export const ptBr: Translations = {
@@ -12,6 +13,7 @@ export const ptBr: Translations = {
   cuttingEdgeAI: 'Oferecemos soluções de IA e automação de ponta adaptadas às suas necessidades específicas',
   readyToTransform: 'Pronto para Transformar Seu Negócio?',
   fillOutForm: 'Preencha o formulário abaixo e entraremos em contato com você em 24 horas',
+  
   // Service cards
   aiCustomerSupportTitle: 'Agentes de Suporte ao Cliente com IA',
   aiCustomerSupportDesc: 'Agentes de suporte inteligentes disponíveis 24/7 que entendem o contexto, resolvem problemas e oferecem experiências excepcionais aos clientes.',
@@ -25,8 +27,14 @@ export const ptBr: Translations = {
   marketingAutomationDesc: 'Criação de conteúdo potencializada por IA, gerenciamento de campanhas e otimização da jornada do cliente para melhorar taxas de conversão.',
   customAISolutionsTitle: 'Soluções Personalizadas de IA',
   customAISolutionsDesc: 'Aplicações de inteligência artificial desenvolvidas especificamente para seus desafios e oportunidades de negócios únicos.',
-  // Testimonials (navigation reference)
+  
+  // Hero section
+  heroTitle: "Soluções de Negócios Potencializadas por IA",
+  heroSubtitle: "Transforme suas operações com automação inteligente",
+  
+  // Testimonials
   testimonials: 'Depoimentos',
+  
   // Contact form
   getInTouch: 'Entre em Contato',
   name: 'Nome',
@@ -40,6 +48,7 @@ export const ptBr: Translations = {
   tellUs: 'Conte-nos sobre seu projeto ou requisitos',
   sendMessage: 'Enviar Mensagem',
   sending: 'Enviando...',
+  
   // Footer
   footerDesc: 'Transformando empresas com agentes de IA e soluções de automação inteligente que impulsionam eficiência e crescimento.',
   footerServices: 'Serviços',
@@ -55,6 +64,7 @@ export const ptBr: Translations = {
   blog: 'Blog',
   careers: 'Carreiras',
   allRightsReserved: 'Todos os direitos reservados.',
+  
   // AI Applications section
   aiApplications: 'Aplicações de IA',
   transformingIndustries: 'Transformando Indústrias',
@@ -71,6 +81,13 @@ export const ptBr: Translations = {
   marketplaceDesc: 'Otimize seu marketplace online com recomendações e automação alimentadas por IA.',
   andMoreTitle: 'E Mais',
   andMoreDesc: 'Descubra soluções de IA personalizadas adaptadas às necessidades da sua indústria.',
+  enhanceCustomerExperiences: "Melhorar Experiências dos Clientes",
+  enhanceCustomerExperiencesDesc: "Crie interações personalizadas que encantam clientes",
+  automateTasks: "Automatizar Tarefas",
+  automateTasksDesc: "Libere o tempo da sua equipe para atividades de alto valor",
+  improveDecisionMaking: "Melhorar Tomada de Decisão",
+  improveDecisionMakingDesc: "Aproveite insights de dados para melhores resultados nos negócios",
+  
   // Features section
   features: 'Recursos',
   featuresTitle: 'O Futuro da Automação de Negócios',
@@ -83,6 +100,7 @@ export const ptBr: Translations = {
   featureSpeedDesc: 'Tempos de resposta rápidos e processamento eficiente para todas as suas necessidades de automação',
   featureIntegrationTitle: 'Integração Perfeita',
   featureIntegrationDesc: 'Fácil integração com suas ferramentas e fluxos de trabalho existentes',
+  
   // News section
   news: 'Notícias',
   newsTitle: 'Últimas Atualizações',
@@ -92,10 +110,13 @@ export const ptBr: Translations = {
   news2Date: '10 de abril de 2025',
   news2Title: 'Anúncio de Parceria',
   news2Content: 'Parceria estratégica com empresas líderes de tecnologia para expandir nossas soluções de IA',
+  
   // AI Agents Features section
   aiAgentsFeatures: 'Agentes de IA',
   aiAgentsFeaturesTitle: 'Agentes Inteligentes de IA para Cada Canal',
   aiAgentsFeaturesDesc: 'Nossos agentes de IA se integram perfeitamente com seus canais de comunicação preferidos',
+  aiAgentsTitle: 'Agentes de IA Versáteis',
+  aiAgentsDescription: 'Nossos agentes de IA se adaptam às necessidades do seu negócio',
   whatsappAgentTitle: 'Agente do WhatsApp',
   whatsappAgentDesc: 'Gerencia consultas de clientes 24/7, automatiza agendamentos e fornece informações sobre produtos instantaneamente via mensagens do WhatsApp.',
   instagramAgentTitle: 'Agente do Instagram',
@@ -104,9 +125,28 @@ export const ptBr: Translations = {
   websiteAgentDesc: 'Engaja visitantes com suporte personalizado via chat, qualifica leads e guia usuários pelo seu site com assistência contextual.',
   voiceAgentTitle: 'Agente de Voz',
   voiceAgentDesc: 'Interações por voz naturais para suporte telefônico, agendamento de reuniões e operação hands-free dos seus serviços.',
+  customerServiceAutomation: 'Automação de Atendimento ao Cliente',
+  customerServiceAutomationDesc: 'Automatize tarefas repetitivas de atendimento ao cliente',
+  salesProcessOptimization: 'Otimização do Processo de Vendas',
+  salesProcessOptimizationDesc: 'Melhore seu funil de vendas com assistência inteligente',
+  streamlinedScheduling: 'Agendamento Simplificado',
+  streamlinedSchedulingDesc: 'Elimine idas e vindas de emails para marcar compromissos',
+  
+  // Navigation
+  home: 'Início',
+  applications: 'Aplicações',
+  
+  // Not Found page
+  returnHome: 'Voltar para o Início',
+  
   // Blog translations
-  blog: "Blog",
   blogTitle: "Nosso Blog",
   blogDescription: "Descubra as últimas novidades e notícias sobre IA e automação.",
   viewAllPosts: "Ver Todas as Postagens",
+  
+  // Additional form fields
+  fullName: "Nome Completo",
+  send: "Enviar",
+  successMessage: "Sua mensagem foi enviada com sucesso!",
+  errorMessage: "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente."
 };
