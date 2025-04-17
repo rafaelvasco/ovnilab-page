@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -70,8 +71,62 @@ export default {
           purple: "#42266E",
           darkPurple: "#2D1A4B",
           background: "#1F1435",
-          text: "#F7F7F9"
+          text: "#F7F7F9",
+          teal: "#0BDBE3"
         }
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '100%',
+            color: '#F7F7F9',
+            h1: {
+              color: '#F7F7F9',
+              fontWeight: '700',
+            },
+            h2: {
+              color: '#F7F7F9',
+              fontWeight: '700',
+            },
+            h3: {
+              color: '#F7F7F9',
+              fontWeight: '600',
+            },
+            h4: {
+              color: '#F7F7F9',
+              fontWeight: '600',
+            },
+            a: {
+              color: '#33A9FF',
+              '&:hover': {
+                color: '#FFB463',
+              },
+            },
+            blockquote: {
+              color: '#F7F7F9',
+              borderLeftColor: '#33A9FF',
+            },
+            code: {
+              color: '#FFB463',
+            },
+            pre: {
+              backgroundColor: 'rgba(0, 0, 0, 0.3)',
+              backdropFilter: 'blur(4px)',
+            },
+            strong: {
+              color: '#F7F7F9',
+            },
+            ul: {
+              listStyleType: 'disc',
+            },
+            ol: {
+              listStyleType: 'decimal',
+            },
+            li: {
+              color: '#F7F7F9',
+            },
+          },
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -144,5 +199,8 @@ export default {
       }
     }
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require('@tailwindcss/typography'),
+  ],
 } satisfies Config;
