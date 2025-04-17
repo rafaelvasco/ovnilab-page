@@ -69,4 +69,25 @@ export type Translations = {
   andMoreDesc: string;
   // Testimonials section (keep for navigation)
   testimonials: string;
+  // Features section
+  features: string;
+  featuresTitle: string;
+  featuresDesc: string;
+  featureAutoTitle: string;
+  featureAutoDesc: string;
+  featureBotTitle: string;
+  featureBotDesc: string;
+  featureSpeedTitle: string;
+  featureSpeedDesc: string;
+  featureIntegrationTitle: string;
+  featureIntegrationDesc: string;
+  // News section
+  news: string;
+  newsTitle: string;
+  news1Date: string;
+  news1Title: string;
+  news1Content: string;
+  news2Date: string;
+  news2Title: string;
+  news2Content: string;
 };

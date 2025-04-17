@@ -1,4 +1,3 @@
-
 import { Translations } from './types';
 
 export const en: Translations = {
@@ -72,4 +71,25 @@ export const en: Translations = {
   marketplaceDesc: 'Optimize your online marketplace with AI-powered recommendations and automation.',
   andMoreTitle: 'And More',
   andMoreDesc: 'Discover custom AI solutions tailored to your industry needs.',
+  // Features section
+  features: 'Features',
+  featuresTitle: 'Future of Business Automation',
+  featuresDesc: 'Discover how our cutting-edge features are revolutionizing business processes',
+  featureAutoTitle: 'Smart Automation',
+  featureAutoDesc: 'Automate complex business processes with intelligent decision-making capabilities',
+  featureBotTitle: 'AI-Powered Bots',
+  featureBotDesc: 'Custom AI agents that understand your business context and adapt to your needs',
+  featureSpeedTitle: 'Lightning Fast',
+  featureSpeedDesc: 'Rapid response times and efficient processing for all your automation needs',
+  featureIntegrationTitle: 'Seamless Integration',
+  featureIntegrationDesc: 'Easy integration with your existing tools and workflows',
+  // News section
+  news: 'News',
+  newsTitle: 'Latest Updates',
+  news1Date: 'April 15, 2025',
+  news1Title: 'New AI Model Release',
+  news1Content: 'Introducing our latest AI model with enhanced natural language processing capabilities',
+  news2Date: 'April 10, 2025',
+  news2Title: 'Partnership Announcement',
+  news2Content: 'Strategic partnership with leading tech companies to expand our AI solutions',
 };
