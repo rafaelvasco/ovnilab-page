@@ -13,7 +13,6 @@ import {
   MessageSquare,
   Star,
   BarChart4,
-  Bot,
   Zap,
   Settings,
   CloudCog,

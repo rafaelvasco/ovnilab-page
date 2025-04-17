@@ -1,8 +1,13 @@
-import React from 'react';
-import { useLanguage } from '@/hooks/useLanguage';
-import { translations } from '@/locales';
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Brain, Bot, Zap, CircuitBoard } from 'lucide-react';
+import React from "react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/locales";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
+import { Brain, Bot, Zap, CircuitBoard } from "lucide-react";
 
 const Features = () => {
   const { language } = useLanguage();
@@ -12,23 +17,23 @@ const Features = () => {
     {
       icon: <Brain className="w-8 h-8 text-ovnilab-teal" />,
       title: t.featureAutoTitle,
-      description: t.featureAutoDesc
+      description: t.featureAutoDesc,
     },
     {
       icon: <Bot className="w-8 h-8 text-ovnilab-green" />,
       title: t.featureBotTitle,
-      description: t.featureBotDesc
+      description: t.featureBotDesc,
     },
     {
       icon: <Zap className="w-8 h-8 text-ovnilab-purple" />,
       title: t.featureSpeedTitle,
-      description: t.featureSpeedDesc
+      description: t.featureSpeedDesc,
     },
     {
       icon: <CircuitBoard className="w-8 h-8 text-ovnilab-teal" />,
       title: t.featureIntegrationTitle,
-      description: t.featureIntegrationDesc
-    }
+      description: t.featureIntegrationDesc,
+    },
   ];
 
   return (
@@ -40,9 +45,7 @@ const Features = () => {
             {t.features}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-            {t.featuresTitle.split('Future').map((part, i) => 
-              i === 0 ? <>{part}<span className="text-gradient">Future</span></> : part
-            )}
+            <span className="text-gradient">{t.featuresTitle}</span>
           </h2>
           <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
             {t.featuresDesc}
@@ -51,15 +54,20 @@ const Features = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature) => (
-            <Card key={feature.title} className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300">
+            <Card
+              key={feature.title}
+              className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-orange hover:cursor-pointer transition-all duration-300"
+            >
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <div className="bg-ovnilab-cream/10 p-2 rounded-xl">
                     {React.cloneElement(feature.icon as React.ReactElement, {
-                      className: 'w-8 h-8 text-ovnilab-cream'
+                      className: "w-8 h-8 text-ovnilab-cream",
                     })}
                   </div>
-                  <CardTitle className="text-xl font-semibold text-zinc-50">{feature.title}</CardTitle>
+                  <CardTitle className="text-xl font-semibold text-zinc-50">
+                    {feature.title}
+                  </CardTitle>
                 </div>
                 <CardDescription className="text-ovnilab-text/80 text-base mt-4">
                   {feature.description}

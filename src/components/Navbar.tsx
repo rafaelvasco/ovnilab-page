@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Globe } from "lucide-react";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -46,20 +46,17 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <a
             href="#services"
-            className="text-ovnilab-text hover:text-ovnilab-teal transition-colors"
+            className="text-ovnilab-text hover:text-ovnilab-orange transition-colors"
           >
             {t.services}
           </a>
           <a
             href="#contact"
-            className="text-ovnilab-text hover:text-ovnilab-teal transition-colors"
+            className="text-ovnilab-text hover:text-ovnilab-orange transition-colors"
           >
             {t.contact}
           </a>
-          <a
-            href="#contact"
-            className="text-ovnilab-navy transition-colors btn-primary"
-          >
+          <a href="#contact" className="text-ovnilab-navy btn-primary">
             {t.getExpertHelp}
           </a>
           <div className="flex items-center space-x-2 border-l pl-2 border-ovnilab-teal/30">
@@ -68,8 +65,8 @@ const Navbar = () => {
               className={cn(
                 "px-2 py-1 rounded-md transition-colors",
                 language === "en"
-                  ? "bg-ovnilab-teal/20 text-ovnilab-teal"
-                  : "text-ovnilab-text/70 hover:text-ovnilab-teal",
+                  ? "bg-ovnilab-orange/20 text-ovnilab-orange"
+                  : "text-ovnilab-text/70 hover:text-ovnilab-orange",
               )}
             >
               EN
@@ -79,8 +76,8 @@ const Navbar = () => {
               className={cn(
                 "px-2 py-1 rounded-md transition-colors",
                 language === "es"
-                  ? "bg-ovnilab-teal/20 text-ovnilab-teal"
-                  : "text-ovnilab-text/70 hover:text-ovnilab-teal",
+                  ? "bg-ovnilab-orange/20 text-ovnilab-orange"
+                  : "text-ovnilab-text/70 hover:text-ovnilab-orange",
               )}
             >
               ES
@@ -90,8 +87,8 @@ const Navbar = () => {
               className={cn(
                 "px-2 py-1 rounded-md transition-colors",
                 language === "pt-br"
-                  ? "bg-ovnilab-teal/20 text-ovnilab-teal"
-                  : "text-ovnilab-text/70 hover:text-ovnilab-teal",
+                  ? "bg-ovnilab-orange/20 text-ovnilab-orange"
+                  : "text-ovnilab-text/70 hover:text-ovnilab-orange",
               )}
             >
               PT-BR
