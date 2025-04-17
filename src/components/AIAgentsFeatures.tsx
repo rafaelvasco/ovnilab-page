@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { translations } from '@/locales';
@@ -50,13 +49,17 @@ const AIAgentsFeatures = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature) => (
-            <Card key={feature.title} className="bg-black/30 backdrop-blur-lg border border-white/10 card-hover">
+            <Card key={feature.title} className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300">
               <CardHeader>
-                <div className="flex items-center gap-4 mb-4">
-                  {feature.icon}
+                <div className="flex items-center gap-4">
+                  <div className="bg-ovnilab-cream/10 p-2 rounded-xl">
+                    {React.cloneElement(feature.icon as React.ReactElement, {
+                      className: 'w-8 h-8 text-ovnilab-cream'
+                    })}
+                  </div>
                   <CardTitle className="text-xl font-semibold text-zinc-50">{feature.title}</CardTitle>
                 </div>
-                <CardDescription className="text-ovnilab-text/80 text-base">
+                <CardDescription className="text-ovnilab-text/80 text-base mt-4">
                   {feature.description}
                 </CardDescription>
               </CardHeader>

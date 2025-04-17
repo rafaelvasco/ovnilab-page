@@ -118,7 +118,7 @@
   }
   
   .btn-primary {
-    @apply px-6 py-3 rounded-full bg-gradient-to-r from-ovnilab-blue to-ovnilab-cream text-ovnilab-navy font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(51,169,255,0.5)] hover:scale-105;
+    @apply px-6 py-3 rounded-full bg-gradient-to-r from-ovnilab-blue to-ovnilab-cream text-ovnilab-navy font-bold transition-all duration-300 hover:scale-105;
   }
   
   .btn-secondary {

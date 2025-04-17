@@ -12,58 +12,12 @@ interface ServiceCardProps {
 const ServiceCard: React.FC<ServiceCardProps> = ({
   title,
   description,
-  icon,
-  color
+  icon
 }) => {
-  const getColorClasses = () => {
-    switch (color) {
-      case 'teal':
-        return 'border-ovnilab-teal/30';
-      case 'green':
-        return 'border-ovnilab-green/30';
-      case 'purple':
-        return 'border-ovnilab-lightPurple/30';
-      case 'orange':
-        return 'border-ovnilab-orange/30';
-      default:
-        return 'border-ovnilab-teal/30';
-    }
-  };
-
-  const getIconBgClasses = () => {
-    switch (color) {
-      case 'teal':
-        return 'bg-ovnilab-teal/20';
-      case 'green':
-        return 'bg-ovnilab-green/20';
-      case 'purple':
-        return 'bg-ovnilab-lightPurple/20';
-      case 'orange':
-        return 'bg-ovnilab-orange/20';
-      default:
-        return 'bg-ovnilab-teal/20';
-    }
-  };
-
-  const getIconClasses = () => {
-    switch (color) {
-      case 'teal':
-        return 'text-ovnilab-teal';
-      case 'green':
-        return 'text-ovnilab-green';
-      case 'purple':
-        return 'text-ovnilab-lightPurple';
-      case 'orange':
-        return 'text-ovnilab-orange';
-      default:
-        return 'text-ovnilab-teal';
-    }
-  };
-
   return (
-    <div className={cn("glass-card p-6 border", getColorClasses())}>
-      <div className={cn("w-14 h-14 rounded-xl flex items-center justify-center mb-6", getIconBgClasses())}>
-        <div className={getIconClasses()}>
+    <div className="glass-card p-6 border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300">
+      <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 bg-ovnilab-cream/10">
+        <div className="text-ovnilab-cream">
           {icon}
         </div>
       </div>

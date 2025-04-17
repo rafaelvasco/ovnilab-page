@@ -31,8 +31,8 @@ const News = () => {
             {t.news}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-            {t.newsTitle.split('Latest').map((part, i) => 
-              i === 0 ? <>{part}<span className="text-gradient">Latest</span></> : part
+            {t.newsTitle.split('Our Latest').map((part, i) => 
+              i === 0 ? <>{part}<span className="text-gradient">Our Latest</span></> : part
             )}
           </h2>
         </div>

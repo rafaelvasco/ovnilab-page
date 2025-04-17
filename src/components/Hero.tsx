@@ -41,7 +41,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/010bb55d-b853-448a-82bc-05ba9650829d.png" 
             alt="OVNILAB Logo" 
-            className="mx-auto w-44 md:w-56 lg:w-64 h-auto"
+            className="mx-auto w-44 md:w-56 lg:w-64 h-auto rounded-full bg-ovnilab-navy p-4"
           />
         </div>
         
