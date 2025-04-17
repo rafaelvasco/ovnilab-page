@@ -1,9 +1,8 @@
-
-import React from 'react';
-import { useLanguage } from '@/hooks/useLanguage';
-import { translations } from '@/locales';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
-import { Calendar } from 'lucide-react';
+import React from "react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/locales";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Calendar } from "lucide-react";
 
 const News = () => {
   const { language } = useLanguage();
@@ -13,13 +12,13 @@ const News = () => {
     {
       date: t.news1Date,
       title: t.news1Title,
-      content: t.news1Content
+      content: t.news1Content,
     },
     {
       date: t.news2Date,
       title: t.news2Title,
-      content: t.news2Content
-    }
+      content: t.news2Content,
+    },
   ];
 
   return (
@@ -31,21 +30,24 @@ const News = () => {
             {t.news}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-            {t.newsTitle.split('Our Latest').map((part, i) => 
-              i === 0 ? <>{part}<span className="text-gradient">Our Latest</span></> : part
-            )}
+            <span className="text-gradient">{t.newsTitle}</span>
           </h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {newsItems.map((item) => (
-            <Card key={item.title} className="bg-black/30 backdrop-blur-lg border border-white/10 card-hover">
+            <Card
+              key={item.title}
+              className="bg-black/30 backdrop-blur-lg border border-ovnilab-cream/10 hover:border-ovnilab-cream/30 transition-all duration-300"
+            >
               <CardHeader>
-                <div className="flex items-center gap-2 text-ovnilab-teal mb-2">
+                <div className="flex items-center gap-2 text-ovnilab-cream mb-2">
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm">{item.date}</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-2">
+                  {item.title}
+                </h3>
               </CardHeader>
               <CardContent>
                 <p className="text-ovnilab-text/80">{item.content}</p>

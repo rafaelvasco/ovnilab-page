@@ -1,27 +1,36 @@
-import React from 'react';
-import Hero from '@/components/Hero';
-import Navbar from '@/components/Navbar';
-import ServiceCard from '@/components/ServiceCard';
-import Features from '@/components/Features';
-import AIApplications from '@/components/AIApplications';
-import News from '@/components/News';
-import ContactForm from '@/components/ContactForm';
-import Footer from '@/components/Footer';
-import AIAgentsFeatures from '@/components/AIAgentsFeatures';
-import { Code, MessageSquare, Star, BarChart4, Bot, Zap, Settings, CloudCog } from 'lucide-react';
-import { useLanguage } from '@/hooks/useLanguage';
-import { translations } from '@/locales';
+import React from "react";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import ServiceCard from "@/components/ServiceCard";
+import Features from "@/components/Features";
+import AIApplications from "@/components/AIApplications";
+import News from "@/components/News";
+import ContactForm from "@/components/ContactForm";
+import Footer from "@/components/Footer";
+import AIAgentsFeatures from "@/components/AIAgentsFeatures";
+import {
+  Code,
+  MessageSquare,
+  Star,
+  BarChart4,
+  Bot,
+  Zap,
+  Settings,
+  CloudCog,
+} from "lucide-react";
+import { useLanguage } from "@/hooks/useLanguage";
+import { translations } from "@/locales";
 
 const Index = () => {
   const { language } = useLanguage();
   const t = translations[language];
-  
+
   return (
     <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <Features />
-      
+
       <section id="services" className="section-padding relative">
         <div className="absolute inset-0 bg-stars opacity-40"></div>
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -30,24 +39,61 @@ const Index = () => {
               {t.ourServices}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-              {t.transformBusiness.split('Transform').map((part, i) => 
-                i === 0 ? <>{part}<span className="text-gradient">Transform</span></> : part
+              {t.transformBusiness.split("Transform").map((part, i) =>
+                i === 0 ? (
+                  <>
+                    {part}
+                    <span className="text-gradient">Transform</span>
+                  </>
+                ) : (
+                  part
+                ),
               )}
             </h2>
             <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
               {t.cuttingEdgeAI}
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ServiceCard title={t.aiCustomerSupportTitle} description={t.aiCustomerSupportDesc} icon={<MessageSquare size={24} />} color="teal" />
-            <ServiceCard title={t.aiSalesAssistantsTitle} description={t.aiSalesAssistantsDesc} icon={<Star size={24} />} color="green" />
-            <ServiceCard title={t.schedulingAgentsTitle} description={t.schedulingAgentsDesc} icon={<Code size={24} />} color="purple" />
-            <ServiceCard title={t.businessProcessTitle} description={t.businessProcessDesc} icon={<Zap size={24} />} color="orange" />
-            <ServiceCard title={t.marketingAutomationTitle} description={t.marketingAutomationDesc} icon={<BarChart4 size={24} />} color="teal" />
-            <ServiceCard title={t.customAISolutionsTitle} description={t.customAISolutionsDesc} icon={<Settings size={24} />} color="green" />
+            <ServiceCard
+              title={t.aiCustomerSupportTitle}
+              description={t.aiCustomerSupportDesc}
+              icon={<MessageSquare size={24} />}
+              color="teal"
+            />
+            <ServiceCard
+              title={t.aiSalesAssistantsTitle}
+              description={t.aiSalesAssistantsDesc}
+              icon={<Star size={24} />}
+              color="green"
+            />
+            <ServiceCard
+              title={t.schedulingAgentsTitle}
+              description={t.schedulingAgentsDesc}
+              icon={<Code size={24} />}
+              color="purple"
+            />
+            <ServiceCard
+              title={t.businessProcessTitle}
+              description={t.businessProcessDesc}
+              icon={<Zap size={24} />}
+              color="orange"
+            />
+            <ServiceCard
+              title={t.marketingAutomationTitle}
+              description={t.marketingAutomationDesc}
+              icon={<BarChart4 size={24} />}
+              color="teal"
+            />
+            <ServiceCard
+              title={t.customAISolutionsTitle}
+              description={t.customAISolutionsDesc}
+              icon={<Settings size={24} />}
+              color="green"
+            />
           </div>
-          
+
           <div className="mt-16 text-center">
             <a href="#contact" className="btn-primary inline-flex items-center">
               <CloudCog className="w-5 h-5 mr-2" />
@@ -56,11 +102,11 @@ const Index = () => {
           </div>
         </div>
       </section>
-      
+
       <AIAgentsFeatures />
       <AIApplications />
       <News />
-      
+
       <section id="contact" className="section-padding relative">
         <div className="absolute inset-0 bg-stars opacity-30"></div>
         <div className="relative z-10 max-w-7xl mx-auto">
@@ -69,19 +115,17 @@ const Index = () => {
               {t.contact}
             </p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 font-space">
-              {t.readyToTransform.split('Transform').map((part, i) => 
-                i === 0 ? <>{part}<span className="text-gradient">Transform</span></> : part
-              )}
+              <span className="text-gradient">{t.readyToTransform}</span>
             </h2>
             <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto">
               {t.fillOutForm}
             </p>
           </div>
-          
+
           <ContactForm />
         </div>
       </section>
-      
+
       <Footer />
     </div>
   );
