@@ -92,4 +92,16 @@ export const en: Translations = {
   news2Date: 'April 10, 2025',
   news2Title: 'Partnership Announcement',
   news2Content: 'Strategic partnership with leading tech companies to expand our AI solutions',
+  // AI Agents Features section
+  aiAgentsFeatures: 'AI Agents',
+  aiAgentsFeaturesTitle: 'Intelligent AI Agents for Every Channel',
+  aiAgentsFeaturesDesc: 'Our AI agents seamlessly integrate with your preferred communication channels',
+  whatsappAgentTitle: 'WhatsApp Agent',
+  whatsappAgentDesc: 'Handle customer inquiries 24/7, automate appointment bookings, and provide instant product information through WhatsApp messaging.',
+  instagramAgentTitle: 'Instagram Agent',
+  instagramAgentDesc: 'Responds to lead comments, automatically removes offensive content, and manages direct message conversations professionally.',
+  websiteAgentTitle: 'Website Agent',
+  websiteAgentDesc: 'Engage visitors with personalized chat support, qualify leads, and guide users through your website with contextual assistance.',
+  voiceAgentTitle: 'Voice Agent',
+  voiceAgentDesc: 'Natural voice interactions for phone support, meeting scheduling, and hands-free operation of your services.',
 };

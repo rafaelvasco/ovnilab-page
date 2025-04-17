@@ -90,4 +90,16 @@ export type Translations = {
   news2Date: string;
   news2Title: string;
   news2Content: string;
+  // AI Agents Features section
+  aiAgentsFeatures: string;
+  aiAgentsFeaturesTitle: string;
+  aiAgentsFeaturesDesc: string;
+  whatsappAgentTitle: string;
+  whatsappAgentDesc: string;
+  instagramAgentTitle: string;
+  instagramAgentDesc: string;
+  websiteAgentTitle: string;
+  websiteAgentDesc: string;
+  voiceAgentTitle: string;
+  voiceAgentDesc: string;
 };

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
@@ -8,6 +7,7 @@ import AIApplications from '@/components/AIApplications';
 import News from '@/components/News';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
+import AIAgentsFeatures from '@/components/AIAgentsFeatures';
 import { Code, MessageSquare, Star, BarChart4, Bot, Zap, Settings, CloudCog } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 import { translations } from '@/locales';
@@ -20,7 +20,6 @@ const Index = () => {
     <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
-      
       <Features />
       
       <section id="services" className="section-padding relative">
@@ -58,8 +57,8 @@ const Index = () => {
         </div>
       </section>
       
+      <AIAgentsFeatures />
       <AIApplications />
-      
       <News />
       
       <section id="contact" className="section-padding relative">

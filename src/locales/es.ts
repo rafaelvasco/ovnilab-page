@@ -1,4 +1,3 @@
-
 import { Translations } from './types';
 
 export const es: Translations = {
@@ -92,5 +91,17 @@ export const es: Translations = {
   news1Content: 'Presentamos nuestro último modelo de IA con capacidades mejoradas de procesamiento del lenguaje natural',
   news2Date: '10 de abril de 2025',
   news2Title: 'Anuncio de Colaboración',
-  news2Content: 'Asociación estratégica con empresas tecnológicas líderes para expandir nuestras soluciones de IA'
+  news2Content: 'Asociación estratégica con empresas tecnológicas líderes para expandir nuestras soluciones de IA',
+  // AI Agents Features section
+  aiAgentsFeatures: 'Agentes de IA',
+  aiAgentsFeaturesTitle: 'Agentes Inteligentes de IA para Cada Canal',
+  aiAgentsFeaturesDesc: 'Nuestros agentes de IA se integran perfectamente con tus canales de comunicación preferidos',
+  whatsappAgentTitle: 'Agente de WhatsApp',
+  whatsappAgentDesc: 'Gestiona consultas de clientes 24/7, automatiza reservas de citas y proporciona información de productos al instante a través de mensajes de WhatsApp.',
+  instagramAgentTitle: 'Agente de Instagram',
+  instagramAgentDesc: 'Responde a comentarios de leads, elimina automáticamente contenido ofensivo y gestiona conversaciones por mensajes directos de manera profesional.',
+  websiteAgentTitle: 'Agente de Sitio Web',
+  websiteAgentDesc: 'Interactúa con visitantes mediante soporte de chat personalizado, califica leads y guía a usuarios por tu sitio web con asistencia contextual.',
+  voiceAgentTitle: 'Agente de Voz',
+  voiceAgentDesc: 'Interacciones de voz naturales para soporte telefónico, programación de reuniones y operación manos libres de tus servicios.',
 };
