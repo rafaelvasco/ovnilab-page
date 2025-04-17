@@ -72,4 +72,25 @@ export const ptBr: Translations = {
   marketplaceDesc: 'Otimize seu marketplace online com recomendações e automação alimentadas por IA.',
   andMoreTitle: 'E Mais',
   andMoreDesc: 'Descubra soluções de IA personalizadas adaptadas às necessidades da sua indústria.',
+  // Features section
+  features: 'Recursos',
+  featuresTitle: 'O Futuro da Automação de Negócios',
+  featuresDesc: 'Descubra como nossos recursos de ponta estão revolucionando processos empresariais',
+  featureAutoTitle: 'Automação Inteligente',
+  featureAutoDesc: 'Automatize processos de negócios complexos com capacidades inteligentes de tomada de decisão',
+  featureBotTitle: 'Bots Potencializados por IA',
+  featureBotDesc: 'Agentes de IA personalizados que entendem o contexto do seu negócio e se adaptam às suas necessidades',
+  featureSpeedTitle: 'Velocidade Relâmpago',
+  featureSpeedDesc: 'Tempos de resposta rápidos e processamento eficiente para todas as suas necessidades de automação',
+  featureIntegrationTitle: 'Integração Perfeita',
+  featureIntegrationDesc: 'Fácil integração com suas ferramentas e fluxos de trabalho existentes',
+  // News section
+  news: 'Notícias',
+  newsTitle: 'Últimas Atualizações',
+  news1Date: '15 de abril de 2025',
+  news1Title: 'Novo Lançamento de Modelo de IA',
+  news1Content: 'Apresentando nosso mais recente modelo de IA com capacidades aprimoradas de processamento de linguagem natural',
+  news2Date: '10 de abril de 2025',
+  news2Title: 'Anúncio de Parceria',
+  news2Content: 'Parceria estratégica com empresas líderes de tecnologia para expandir nossas soluções de IA'
 };

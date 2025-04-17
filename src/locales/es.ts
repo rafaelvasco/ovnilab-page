@@ -72,4 +72,25 @@ export const es: Translations = {
   marketplaceDesc: 'Optimiza tu mercado en línea con recomendaciones y automación impulsadas por IA.',
   andMoreTitle: 'Y Más',
   andMoreDesc: 'Descubre soluciones de IA personalizadas adaptadas a las necesidades de tu industria.',
+  // Features section
+  features: 'Características',
+  featuresTitle: 'El Futuro de la Automatización de Negocios',
+  featuresDesc: 'Descubre cómo nuestras características de vanguardia están revolucionando los procesos empresariales',
+  featureAutoTitle: 'Automatización Inteligente',
+  featureAutoDesc: 'Automatiza procesos empresariales complejos con capacidades de toma de decisiones inteligentes',
+  featureBotTitle: 'Bots Potenciados por IA',
+  featureBotDesc: 'Agentes de IA personalizados que entienden el contexto de tu negocio y se adaptan a tus necesidades',
+  featureSpeedTitle: 'Velocidad Relámpago',
+  featureSpeedDesc: 'Tiempos de respuesta rápidos y procesamiento eficiente para todas tus necesidades de automatización',
+  featureIntegrationTitle: 'Integración Perfecta',
+  featureIntegrationDesc: 'Fácil integración con tus herramientas y flujos de trabajo existentes',
+  // News section
+  news: 'Noticias',
+  newsTitle: 'Últimas Actualizaciones',
+  news1Date: '15 de abril de 2025',
+  news1Title: 'Nuevo Lanzamiento de Modelo de IA',
+  news1Content: 'Presentamos nuestro último modelo de IA con capacidades mejoradas de procesamiento del lenguaje natural',
+  news2Date: '10 de abril de 2025',
+  news2Title: 'Anuncio de Colaboración',
+  news2Content: 'Asociación estratégica con empresas tecnológicas líderes para expandir nuestras soluciones de IA'
 };
