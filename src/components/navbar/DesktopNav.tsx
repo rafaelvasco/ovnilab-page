@@ -6,6 +6,7 @@ type DesktopNavProps = {
     services: string;
     contact: string;
     getExpertHelp: string;
+    tryOurAgents: string;
   };
 };
 
@@ -23,6 +24,9 @@ export const DesktopNav = ({ translations }: DesktopNavProps) => {
         className="text-ovnilab-text hover:text-ovnilab-orange transition-colors"
       >
         {translations.contact}
+      </a>
+      <a href="#" className="text-ovnilab-text btn-primary">
+        {translations.tryOurAgents}
       </a>
       <a href="#contact" className="text-ovnilab-navy btn-primary">
         {translations.getExpertHelp}

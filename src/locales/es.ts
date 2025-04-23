@@ -1,4 +1,3 @@
-
 import { Translations } from './types';
 
 export const es: Translations = {
@@ -148,5 +147,7 @@ export const es: Translations = {
   fullName: "Nombre Completo",
   send: "Enviar",
   successMessage: "¡Tu mensaje ha sido enviado exitosamente!",
-  errorMessage: "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo."
+  errorMessage: "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
+  
+  tryOurAgents: "Prueba nuestros Agentes"
 };

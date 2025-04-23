@@ -1,4 +1,3 @@
-
 import { Translations } from './types';
 
 export const ptBr: Translations = {
@@ -148,5 +147,7 @@ export const ptBr: Translations = {
   fullName: "Nome Completo",
   send: "Enviar",
   successMessage: "Sua mensagem foi enviada com sucesso!",
-  errorMessage: "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente."
+  errorMessage: "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
+  
+  tryOurAgents: "Experimente nossos Agentes"
 };

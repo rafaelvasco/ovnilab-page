@@ -1,4 +1,3 @@
-
 export interface Translations {
   ourServices: string;
   transformBusiness: string;
@@ -141,4 +140,6 @@ export interface Translations {
   blogTitle: string;
   blogDescription: string;
   viewAllPosts: string;
+
+  tryOurAgents: string;
 }

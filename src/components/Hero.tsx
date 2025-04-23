@@ -59,6 +59,9 @@ const Hero = () => {
           <a href="#services" className="btn-primary w-full sm:w-auto">
             {t.exploreServices}
           </a>
+          <a href="#" className="btn-primary w-full sm:w-auto">
+            {t.tryOurAgents}
+          </a>
           <a href="#contact" className="btn-outline w-full sm:w-auto">
             {t.contactUs}
           </a>
