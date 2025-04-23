@@ -1,21 +1,4 @@
 export interface Translations {
-  ourServices: string;
-  transformBusiness: string;
-  cuttingEdgeAI: string;
-  aiCustomerSupportTitle: string;
-  aiCustomerSupportDesc: string;
-  aiSalesAssistantsTitle: string;
-  aiSalesAssistantsDesc: string;
-  schedulingAgentsTitle: string;
-  schedulingAgentsDesc: string;
-  businessProcessTitle: string;
-  businessProcessDesc: string;
-  marketingAutomationTitle: string;
-  marketingAutomationDesc: string;
-  customAISolutionsTitle: string;
-  customAISolutionsDesc: string;
-  getExpertHelp: string;
-  
   // Hero section
   heroTitle: string;
   heroSubtitle: string;
@@ -35,10 +18,28 @@ export interface Translations {
   featureSpeedDesc: string;
   featureIntegrationTitle: string;
   featureIntegrationDesc: string;
-  
-  // AI Agents Features Section
-  aiAgentsFeatures: string;
-  aiAgentsFeaturesTitle: string;
+
+  // Our Services section
+  ourServices: string;
+  transformBusiness: string;
+  cuttingEdgeAI: string;
+  aiCustomerSupportTitle: string;
+  aiCustomerSupportDesc: string;
+  aiSalesAssistantsTitle: string;
+  aiSalesAssistantsDesc: string;
+  schedulingAgentsTitle: string;
+  schedulingAgentsDesc: string;
+  businessProcessTitle: string;
+  businessProcessDesc: string;
+  marketingAutomationTitle: string;
+  marketingAutomationDesc: string;
+  customAISolutionsTitle: string;
+  customAISolutionsDesc: string;
+  getExpertHelp: string;
+
+  // AI Agents Channels Section
+  aiAgentsChannels: string;
+  aiAgentsChannelsTitle: string;
   aiAgentsFeaturesDesc: string;
   aiAgentsTitle: string;
   aiAgentsDescription: string;
@@ -56,6 +57,27 @@ export interface Translations {
   salesProcessOptimizationDesc: string;
   streamlinedScheduling: string;
   streamlinedSchedulingDesc: string;
+
+  // AI Agents Types Section
+  agentBdr: string;
+  agentSdrDesc: string;
+  agentSdr: string;
+  agentBdrDesc: string;
+  agentSeller: string;
+  agentSellerDesc: string;
+  agentBuyer: string;
+  agentBuyerDesc: string;
+  agentCustomerService: string;
+  agentCustomerServiceDesc: string;
+  agentSupport: string;
+  agentSupportDesc: string;
+  agentContract: string;
+  agentContractDesc: string;
+
+  // AI Agents Types customerServiceAutomation
+  aiAgentsTypes: string;
+  aiAgentsTypesTitle: string;
+  aiAgentsTypesDesc: string;
 
   // AI Applications section
   aiApplications: string;
@@ -80,9 +102,20 @@ export interface Translations {
   improveDecisionMaking: string;
   improveDecisionMakingDesc: string;
 
+  // News section
+  news: string;
+  newsTitle: string;
+  news1Date: string;
+  news1Title: string;
+  news1Content: string;
+  news2Date: string;
+  news2Title: string;
+  news2Content: string;
+
   // Contact form
   contact: string;
   readyToTransform: string;
+  readyToTransformOr: string;
   fillOutForm: string;
   fullName: string;
   email: string;
@@ -100,16 +133,6 @@ export interface Translations {
   tellUs: string;
   sending: string;
   sendMessage: string;
-
-  // News section
-  news: string;
-  newsTitle: string;
-  news1Date: string;
-  news1Title: string;
-  news1Content: string;
-  news2Date: string;
-  news2Title: string;
-  news2Content: string;
 
   // Navbar
   home: string;
