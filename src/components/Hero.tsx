@@ -1,4 +1,3 @@
-
 import React from "react";
 import AnimatedText from "./AnimatedText";
 import { useLanguage } from "@/hooks/useLanguage";
@@ -57,7 +56,7 @@ const Hero = () => {
           {getDescriptionText()}
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-24">
           <CustomButton asChild variant="primary">
             <a href="#services">{t.exploreServices}</a>
           </CustomButton>
@@ -68,28 +67,6 @@ const Hero = () => {
             <a href="#contact">{t.contactUs}</a>
           </CustomButton>
         </div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <svg
-          width="24"
-          height="38"
-          viewBox="0 0 24 38"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="opacity-70"
-        >
-          <rect
-            x="1"
-            y="1"
-            width="22"
-            height="36"
-            rx="11"
-            stroke="#33A9FF"
-            strokeWidth="2"
-          />
-          <circle cx="12" cy="10" r="4" fill="#33A9FF" />
-        </svg>
       </div>
     </section>
   );
