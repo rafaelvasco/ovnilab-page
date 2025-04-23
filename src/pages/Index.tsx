@@ -1,4 +1,3 @@
-
 import React from "react";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -12,13 +11,12 @@ import Services from "@/components/Services";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
 import { CustomButton } from "@/components/ui/custom-button";
-
 const Index = () => {
-  const { language } = useLanguage();
+  const {
+    language
+  } = useLanguage();
   const t = translations[language];
-  
-  return (
-    <div className="overflow-x-hidden">
+  return <div className="overflow-x-hidden">
       <Navbar />
       <Hero />
       <Features />
@@ -38,9 +36,7 @@ const Index = () => {
               <span className="text-gradient">{t.readyToTransform}</span>
             </h2>
             <div className="flex flex-col items-center space-y-8">
-              <p className="text-xl text-ovnilab-text/80 max-w-2xl mx-auto mb-4">
-                Click the Button Below to Try our AI Agents
-              </p>
+              
               <CustomButton asChild variant="gradient" size="lg">
                 <a href="#">{t.tryOurAgents}</a>
               </CustomButton>
@@ -60,8 +56,6 @@ const Index = () => {
       </section>
 
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
