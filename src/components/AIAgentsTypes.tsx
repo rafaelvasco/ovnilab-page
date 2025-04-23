@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
@@ -7,7 +8,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { MessageSquare, Instagram, Globe, Mic } from "lucide-react";
+import { User, Briefcase, BriefcaseBusiness, Users, HelpCircle, FileSpreadsheet } from "lucide-react";
 
 const AIAgentsTypes = () => {
   const { language } = useLanguage();
@@ -15,32 +16,32 @@ const AIAgentsTypes = () => {
 
   const aiAgentsTypes = [
     {
-      icon: <MessageSquare className="w-8 h-8 text-ovnilab-teal" />,
+      icon: <User className="w-8 h-8 text-ovnilab-teal" />,
       title: t.agentSdr,
       description: t.agentSdrDesc,
     },
     {
-      icon: <Instagram className="w-8 h-8 text-ovnilab-purple" />,
+      icon: <BriefcaseBusiness className="w-8 h-8 text-ovnilab-purple" />,
       title: t.agentBdr,
       description: t.agentBdrDesc,
     },
     {
-      icon: <Globe className="w-8 h-8 text-ovnilab-green" />,
+      icon: <Briefcase className="w-8 h-8 text-ovnilab-green" />,
       title: t.agentSeller,
       description: t.agentSellerDesc,
     },
     {
-      icon: <Mic className="w-8 h-8 text-ovnilab-teal" />,
+      icon: <Users className="w-8 h-8 text-ovnilab-teal" />,
       title: t.agentCustomerService,
       description: t.agentCustomerServiceDesc,
     },
     {
-      icon: <Mic className="w-8 h-8 text-ovnilab-teal" />,
+      icon: <HelpCircle className="w-8 h-8 text-ovnilab-orange" />,
       title: t.agentSupport,
       description: t.agentSupportDesc,
     },
     {
-      icon: <Mic className="w-8 h-8 text-ovnilab-teal" />,
+      icon: <FileSpreadsheet className="w-8 h-8 text-ovnilab-purple" />,
       title: t.agentContract,
       description: t.agentContractDesc,
     },
