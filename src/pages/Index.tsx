@@ -11,6 +11,7 @@ import AIAgentsFeatures from "@/components/AIAgentsFeatures";
 import Services from "@/components/Services";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
+import { CustomButton } from "@/components/ui/custom-button";
 
 const Index = () => {
   const { language } = useLanguage();
