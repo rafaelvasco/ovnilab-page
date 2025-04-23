@@ -58,21 +58,13 @@ const Footer = () => {
                   {t.aboutUs}
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">
-                  {t.caseStudies}
-                </a>
-              </li>
+              
               <li>
                 <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">
                   {t.blog}
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">
-                  {t.careers}
-                </a>
-              </li>
+              
             </ul>
           </div>
 
@@ -83,24 +75,13 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Mail className="w-5 h-5 text-ovnilab-teal mr-3 mt-0.5" />
-                <a href="mailto:contact@ovnilab.com" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">
-                  contact@ovnilab.com
-                </a>
+                <a href="mailto:contact@ovnilab.com" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">contact@ovnilab.com</a>
               </li>
               <li className="flex items-start">
                 <Phone className="w-5 h-5 text-ovnilab-teal mr-3 mt-0.5" />
-                <a href="tel:+15555555555" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">
-                  +1 (555) 555-5555
-                </a>
+                <a href="tel:+15555555555" className="text-ovnilab-text/70 hover:text-ovnilab-orange transition-colors">+55 (31) 99611-3123</a>
               </li>
-              <li className="flex items-start">
-                <MapPin className="w-5 h-5 text-ovnilab-teal mr-3 mt-0.5" />
-                <span className="text-ovnilab-text/70">
-                  123 AI Avenue, Tech District
-                  <br />
-                  San Francisco, CA 94105
-                </span>
-              </li>
+              
             </ul>
           </div>
         </div>
