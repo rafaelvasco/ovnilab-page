@@ -25,7 +25,7 @@ export const DesktopNav = ({ translations }: DesktopNavProps) => {
       >
         {translations.contact}
       </a>
-      <a href="#" className="text-ovnilab-text btn-primary">
+      <a href="#" className="text-ovnilab-text btn-ai-agents">
         {translations.tryOurAgents}
       </a>
       <a href="#contact" className="text-ovnilab-navy btn-primary">
