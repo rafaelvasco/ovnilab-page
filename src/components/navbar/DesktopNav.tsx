@@ -1,5 +1,6 @@
 
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import { CustomButton } from "@/components/ui/custom-button";
 
 type DesktopNavProps = {
   translations: {
@@ -25,12 +26,12 @@ export const DesktopNav = ({ translations }: DesktopNavProps) => {
       >
         {translations.contact}
       </a>
-      <a href="#" className="text-ovnilab-text btn-primary">
-        {translations.tryOurAgents}
-      </a>
-      <a href="#contact" className="text-ovnilab-navy btn-primary">
-        {translations.getExpertHelp}
-      </a>
+      <CustomButton asChild variant="gradient">
+        <a href="#">{translations.tryOurAgents}</a>
+      </CustomButton>
+      <CustomButton asChild variant="primary">
+        <a href="#contact">{translations.getExpertHelp}</a>
+      </CustomButton>
       <LanguageSwitcher />
     </div>
   );

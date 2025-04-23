@@ -1,7 +1,9 @@
+
 import React from "react";
 import AnimatedText from "./AnimatedText";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
+import { CustomButton } from "@/components/ui/custom-button";
 
 const Hero = () => {
   const { language } = useLanguage();
@@ -56,15 +58,15 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#services" className="btn-primary w-full sm:w-auto">
-            {t.exploreServices}
-          </a>
-          <a href="#" className="btn-primary w-full sm:w-auto">
-            {t.tryOurAgents}
-          </a>
-          <a href="#contact" className="btn-outline w-full sm:w-auto">
-            {t.contactUs}
-          </a>
+          <CustomButton asChild variant="primary">
+            <a href="#services">{t.exploreServices}</a>
+          </CustomButton>
+          <CustomButton asChild variant="gradient">
+            <a href="#">{t.tryOurAgents}</a>
+          </CustomButton>
+          <CustomButton asChild variant="outline">
+            <a href="#contact">{t.contactUs}</a>
+          </CustomButton>
         </div>
       </div>
 
