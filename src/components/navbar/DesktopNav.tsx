@@ -1,6 +1,5 @@
 
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { Button } from "@/components/ui/button";
 
 type DesktopNavProps = {
   translations: {
@@ -26,14 +25,13 @@ export const DesktopNav = ({ translations }: DesktopNavProps) => {
       >
         {translations.contact}
       </a>
-      <Button asChild variant="default" className="bg-ovnilab-orange hover:bg-ovnilab-orange/90">
-        <a href="#">{translations.tryOurAgents}</a>
-      </Button>
-      <Button asChild variant="default" className="bg-ovnilab-navy hover:bg-ovnilab-navy/90">
-        <a href="#contact">{translations.getExpertHelp}</a>
-      </Button>
+      <a href="#" className="text-ovnilab-text btn-primary">
+        {translations.tryOurAgents}
+      </a>
+      <a href="#contact" className="text-ovnilab-navy btn-primary">
+        {translations.getExpertHelp}
+      </a>
       <LanguageSwitcher />
     </div>
   );
 };
-
