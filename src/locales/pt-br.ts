@@ -149,5 +149,5 @@ export const ptBr: Translations = {
   successMessage: "Sua mensagem foi enviada com sucesso!",
   errorMessage: "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
   
-  tryOurAgents: "Experimente nossos Agentes de IA"
+  tryOurAgents: "Experimente nossos Agentes"
 };

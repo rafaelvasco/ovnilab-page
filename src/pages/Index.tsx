@@ -1,4 +1,3 @@
-
 import React from "react";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -27,7 +26,7 @@ const Index = () => {
       <BlogSection />
 
       <div className="text-center mb-32">
-        <a href="#" className="btn-ai-agents inline-flex items-center text-xl py-6 px-12">
+        <a href="#" className="btn-primary inline-flex items-center text-xl py-6 px-12">
           {t.tryOurAgents}
         </a>
       </div>

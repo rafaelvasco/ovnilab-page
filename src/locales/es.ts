@@ -149,5 +149,5 @@ export const es: Translations = {
   successMessage: "¡Tu mensaje ha sido enviado exitosamente!",
   errorMessage: "Hubo un error al enviar tu mensaje. Por favor, inténtalo de nuevo.",
   
-  tryOurAgents: "Prueba nuestros Agentes de IA"
+  tryOurAgents: "Prueba nuestros Agentes"
 };
