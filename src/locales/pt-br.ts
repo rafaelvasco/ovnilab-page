@@ -168,12 +168,17 @@ export const ptBr: Translations = {
     "Elimine idas e vindas de emails para marcar compromissos",
 
   // AI Agents Types section
+  aiAgentsTypes: "Tipos de Agentes de IA",
+  aiAgentsTypesTitle: "Agentes de IA Especializados para Cada Necessidade de Negócio",
+  aiAgentsTypesDesc: "Descubra nossa linha de agentes de IA projetados especificamente para lidar com funções empresariais específicas com experiência e eficiência",
   agentSdr: "Representante de Desenvolvimento de Vendas",
   agentSdrDesc: "Agente de prospecção automatizado que identifica e qualifica leads potenciais, agenda reuniões iniciais e nutre oportunidades em estágio inicial.",
   agentBdr: "Representante de Desenvolvimento de Negócios",
   agentBdrDesc: "Agente estratégico focado em desenvolver novas oportunidades de negócio, pesquisa de mercado e construir relacionamentos de longo prazo com parceiros potenciais.",
   agentSeller: "Agente de Vendas",
   agentSellerDesc: "Agente de IA avançado que gerencia conversas diretas de vendas, demonstrações de produtos e fechamento de negócios com prospects qualificados.",
+  agentBuyer: "Agente de Compras",
+  agentBuyerDesc: "Agente especializado que gerencia processos de compra, avalia fornecedores, negocia termos e garante decisões ideais de aquisição.",
   agentCustomerService: "Agente de Atendimento ao Cliente",
   agentCustomerServiceDesc: "Agente disponível 24/7 que gerencia consultas de clientes, resolve problemas e garante altos níveis de satisfação através de suporte personalizado.",
   agentSupport: "Agente de Suporte Técnico",

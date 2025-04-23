@@ -8,7 +8,7 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { User, Briefcase, BriefcaseBusiness, Users, HelpCircle, FileSpreadsheet } from "lucide-react";
+import { User, Briefcase, BriefcaseBusiness, Users, HelpCircle, FileSpreadsheet, ShoppingCart } from "lucide-react";
 
 const AIAgentsTypes = () => {
   const { language } = useLanguage();
@@ -29,6 +29,11 @@ const AIAgentsTypes = () => {
       icon: <Briefcase className="w-8 h-8 text-ovnilab-green" />,
       title: t.agentSeller,
       description: t.agentSellerDesc,
+    },
+    {
+      icon: <ShoppingCart className="w-8 h-8 text-ovnilab-orange" />,
+      title: t.agentBuyer,
+      description: t.agentBuyerDesc,
     },
     {
       icon: <Users className="w-8 h-8 text-ovnilab-teal" />,

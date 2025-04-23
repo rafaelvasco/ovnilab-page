@@ -1,3 +1,4 @@
+
 import { Translations } from "./types";
 
 export const en: Translations = {
@@ -164,12 +165,17 @@ export const en: Translations = {
     "Eliminate back-and-forth emails for setting appointments",
 
   // AI Agents Types section
+  aiAgentsTypes: "AI Agents Types",
+  aiAgentsTypesTitle: "Specialized AI Agents for Every Business Need",
+  aiAgentsTypesDesc: "Discover our range of purpose-built AI agents designed to handle specific business functions with expertise and efficiency",
   agentSdr: "Sales Development Representative",
   agentSdrDesc: "Automated prospecting agent that identifies and qualifies potential leads, schedules initial meetings, and nurtures early-stage opportunities.",
   agentBdr: "Business Development Representative",
   agentBdrDesc: "Strategic agent focused on developing new business opportunities, market research, and building long-term relationships with potential partners.",
   agentSeller: "Sales Agent",
   agentSellerDesc: "Advanced AI agent that handles direct sales conversations, product demonstrations, and closing deals with qualified prospects.",
+  agentBuyer: "Procurement Agent",
+  agentBuyerDesc: "Specialized agent that manages purchasing processes, evaluates vendors, negotiates terms, and ensures optimal procurement decisions.",
   agentCustomerService: "Customer Service Agent",
   agentCustomerServiceDesc: "24/7 available agent that handles customer inquiries, resolves issues, and ensures high satisfaction levels through personalized support.",
   agentSupport: "Technical Support Agent",
