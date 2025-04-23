@@ -176,5 +176,5 @@ export const en: Translations = {
   successMessage: "Your message has been sent successfully!",
   errorMessage: "There was an error sending your message. Please try again.",
   
-  tryOurAgents: "Try our Agents"
+  tryOurAgents: "Try our AI Agents"
 };
