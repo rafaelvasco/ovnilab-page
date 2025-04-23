@@ -1,3 +1,4 @@
+
 import React from "react";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
@@ -10,6 +11,7 @@ import AIAgentsFeatures from "@/components/AIAgentsFeatures";
 import Services from "@/components/Services";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const { language } = useLanguage();
@@ -26,9 +28,9 @@ const Index = () => {
       <BlogSection />
 
       <div className="text-center mb-32">
-        <a href="#" className="btn-primary inline-flex items-center text-xl py-6 px-12">
-          {t.tryOurAgents}
-        </a>
+        <Button asChild variant="default" size="lg" className="bg-ovnilab-orange hover:bg-ovnilab-orange/90 py-6 px-12 text-xl">
+          <a href="#">{t.tryOurAgents}</a>
+        </Button>
       </div>
 
       <section id="contact" className="section-padding relative">
