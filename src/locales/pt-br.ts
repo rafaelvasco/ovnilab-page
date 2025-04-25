@@ -206,5 +206,5 @@ export const ptBr: Translations = {
   errorMessage:
     "Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente.",
 
-  tryOurAgents: "Experimente nossos Agentes de IA",
+  tryOurAgents: "Fale Conosco Agora!",
 };

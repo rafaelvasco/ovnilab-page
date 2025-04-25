@@ -12,6 +12,7 @@ import { translations } from "@/locales";
 import { CustomButton } from "@/components/ui/custom-button";
 import AIAgentsChannels from "@/components/AIAgentsChannels";
 import AIAgentsTypes from "@/components/AIAgentsTypes";
+
 const Index = () => {
   const { language } = useLanguage();
   const t = translations[language];
@@ -61,4 +62,5 @@ const Index = () => {
     </div>
   );
 };
+
 export default Index;
