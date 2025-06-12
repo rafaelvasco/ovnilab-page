@@ -3,6 +3,7 @@ import AnimatedText from "./AnimatedText";
 import { useLanguage } from "@/hooks/useLanguage";
 import { translations } from "@/locales";
 import { CustomButton } from "@/components/ui/custom-button";
+import { EXTERNAL_LINKS } from "@/constants/links";
 
 const Hero = () => {
   const { language } = useLanguage();
@@ -61,7 +62,7 @@ const Hero = () => {
             <a href="#services">{t.exploreServices}</a>
           </CustomButton>
           <CustomButton asChild variant="gradient">
-            <a href="#">{t.tryOurAgents}</a>
+            <a href={EXTERNAL_LINKS.TRY_OUR_AGENTS}>{t.tryOurAgents}</a>
           </CustomButton>
           <CustomButton asChild variant="outline">
             <a href="#contact">{t.contactUs}</a>

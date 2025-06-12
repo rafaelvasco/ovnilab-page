@@ -12,6 +12,7 @@ import { translations } from "@/locales";
 import { CustomButton } from "@/components/ui/custom-button";
 import AIAgentsChannels from "@/components/AIAgentsChannels";
 import AIAgentsTypes from "@/components/AIAgentsTypes";
+import { EXTERNAL_LINKS } from "@/constants/links";
 
 const Index = () => {
   const { language } = useLanguage();
@@ -39,7 +40,7 @@ const Index = () => {
             </h2>
             <div className="flex flex-col items-center space-y-8">
               <CustomButton asChild variant="gradient" size="lg">
-                <a href="#">{t.tryOurAgents}</a>
+                <a href={EXTERNAL_LINKS.TRY_OUR_AGENTS}>{t.tryOurAgents}</a>
               </CustomButton>
               <div className="flex items-center gap-4 my-8">
                 <div className="h-px bg-ovnilab-text/20 w-16"></div>

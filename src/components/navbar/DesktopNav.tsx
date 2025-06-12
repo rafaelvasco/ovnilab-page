@@ -1,6 +1,6 @@
-
 import { LanguageSwitcher } from "./LanguageSwitcher";
 import { CustomButton } from "@/components/ui/custom-button";
+import { EXTERNAL_LINKS } from "@/constants/links";
 
 type DesktopNavProps = {
   translations: {
@@ -27,7 +27,7 @@ export const DesktopNav = ({ translations }: DesktopNavProps) => {
         {translations.contact}
       </a>
       <CustomButton asChild variant="gradient">
-        <a href="#">{translations.tryOurAgents}</a>
+        <a href={EXTERNAL_LINKS.TRY_OUR_AGENTS}>{translations.tryOurAgents}</a>
       </CustomButton>
       <CustomButton asChild variant="primary">
         <a href="#contact">{translations.getExpertHelp}</a>
